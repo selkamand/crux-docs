@@ -14,18 +14,8 @@ We would be happy to set up a virtual meeting to provide a live demo of the tool
    :maxdepth: 2
 
    usage/quick_start
+   usage/installation
    usage/crux_modules
    usage/faq
-
-   :caption: Contents:
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
 .. _`contact us`: selkamand@ccia.org.au

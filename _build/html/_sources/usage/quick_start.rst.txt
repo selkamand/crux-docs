@@ -2,7 +2,7 @@
 Quick Start
 ##############################
 
-#. Install **CRUX** (here_).
+#. Install **CRUX** (link_). For detailed instructions, see **Installing CRUX** section
 
 #. If using your own data: Use the `Data` **=>** `Import Data` module to load a MAF.
 
@@ -13,4 +13,7 @@ Quick Start
 #. Repeat for any module on the sidebar.
 
 
-.. _here: https://github.com/CCICB/CRUX/releases
+
+
+
+.. _link: https://github.com/CCICB/CRUX/releases

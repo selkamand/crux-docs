@@ -2,6 +2,10 @@
 FAQ
 ##############################
 
+.. contents:: FAQ
+	:local:
+	:depth: 2
+
 ====================================================
 Data Import
 ====================================================
@@ -25,7 +29,7 @@ These genes can be excluded from analysis in CRUX.
 The genelist is described in the somaticflags_ package.
 
 ------------------------------------------------
-Why is the text on my figures so small?
+Why is the text in my figures so small?
 ------------------------------------------------
 Most visualisation modules have options to set text-size.
 Sometimes increasing the font-size will cause parts of the text to be cut off.
