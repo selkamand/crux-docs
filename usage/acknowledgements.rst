@@ -8,8 +8,6 @@ Acknowledgements
 
 - Heena Sareen
 
-- Dr Branka Powter
-
 **As well as those who build the tools underpin CRUX functionality**
 
 - Anand Mayakonda (maftools, TCGAmutations)
