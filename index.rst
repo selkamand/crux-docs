@@ -17,5 +17,6 @@ We would be happy to set up a virtual meeting to provide a live demo of the tool
    usage/installation
    usage/crux_modules
    usage/faq
+   usage/acknowledgements
 
 .. _`contact us`: selkamand@ccia.org.au
