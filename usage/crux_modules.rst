@@ -25,6 +25,7 @@ The first step in examining a dataset is often to visualise key metrics that sum
 
 
 If you want to learn about:
+
 - The distribution of variant classifications (Missense | Nonsense | Frameshift | etc)
 - The distribution of variant types (SNP | Ins | Del)
 - The frequencies of each base change (e.g. A>T | A>C | A>G | T>A | etc)
@@ -41,11 +42,13 @@ An oncoplot is one of the most useful tools available for summarising the mutati
 
 
 If you want to learn about:
+
 - What genes are mutated in the greatest number of samples
 - What types of mutations are present in these recurrently mutated genes
-- What genes may be driving disease in each sample
-- How sample-level metadata varies with mutational status of commonly mutated genes
+- Which reccurently mutated genes are affected in each sample
+- How sample-level metadata varies with mutation status of recurrently mutated genes
 - How mutations found in particular samples of interest differ from others
+- How samples vary in the mutational status of a custom geneset
 
 Simply scroll down to <panelname> and select the <tabname> tab.
 
