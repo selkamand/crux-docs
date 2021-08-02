@@ -45,4 +45,4 @@ CRUX can be installed on linux (or any other R-compatible) operating system as a
 	CRUX::run_app()
 
 
-.. _link: https://github.com/CCICB/CRUX/releases/tag/v1.0.0
+.. _link: https://github.com/CCICB/CRUX/releases
