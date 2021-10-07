@@ -36,7 +36,7 @@ If you want to learn about:
 
 Simply scroll down to the **Visualisations** panel and select the **Summary** tab.
 
-.. image:: ../images/single_cohort_summary.png
+.. image:: ../images/single_cohort_summary.PNG
 
 ----------------------------------------------------
 Creating Oncoplots
@@ -55,7 +55,7 @@ If you want to learn about:
 
 Simply scroll down to the **Visualisations** panel and select the **Oncoplot** tab.
 
-.. image:: ../images/single_cohort_oncoplot.png
+.. image:: ../images/single_cohort_oncoplot.PNG
 
 I would strongly recommend taking the time to learn how to read this plot.
 It is a simple yet effective method of identifying interesting genes and samples.
@@ -67,14 +67,14 @@ Each column is represents a sample. Each row a gene. The color of each square in
 In the example below, we see that ZFPM1 is mutated in samples 1-15 (39% of the cohort), while the other samples do not have a mutant ZFPM1.
 Further, sample1 has a in frame deletion mutation in ZFPM1, while sample two has a multi-hit in the same gene (multiple mutations of different types).
 
-.. image:: ../images/single_cohort_oncoplot_zoomed.png
+.. image:: ../images/single_cohort_oncoplot_zoomed.PNG
 
 **What genes are shown**
 
 Oncoplots show only the genes mutated in the greatest number of samples.
 The number of genes shown can be adjusted using the **Genes to plot** option located in the options panel
 
-.. image:: ../images/single_cohort_oncoplot_genestoplot_option.png
+.. image:: ../images/single_cohort_oncoplot_genestoplot_option.PNG
 
 **What can we learn from Oncoplots?**
 
@@ -88,7 +88,7 @@ If we look at the oncoplot, we see known drivers of GBM disease appear near the 
 - TP53
 - EGFR
 
-.. image:: ../images/single_cohort_oncoplot_gbm_top5.png
+.. image:: ../images/single_cohort_oncoplot_gbm_top5.PNG
 
 We also see some genes that are more likely to be artefacts than true disease drivers.
 For example, since we sort variants by recurrence in our cohort, very long genes, such as **TTN** can wind up sneaking their way into the oncoplot without having been specifically selected for in the tumor sample.
@@ -124,7 +124,7 @@ Depending on the goals of your research, you may not be exclusively interested i
 For example, perhaps you want to screen a cohort for samples that have mutations in a set of genes associated with drug resistance.
 We can select a custom list of genes to visualise using the **custom genes** drop-down menu.
 
-.. image:: ../images/single_cohort_oncoplot_custom_genes_option.png
+.. image:: ../images/single_cohort_oncoplot_custom_genes_option.PNG
 
 
 ----------------------------------------------------
@@ -136,19 +136,24 @@ If you want to learn about:
 - What pairs of genes are **frequently** mutated in the same samples (co-occurance)
 - What pairs of genes are **rarely** mutated in the same samples (mutual exclusivity)
 
-Simply scroll down to <panelname> and select the <tabname> tab.
+Simply scroll down to **Visualisations** panel and select the **Somatic Ineractions** tab.
 
-**Why might genes show co-occurance or mutual exclusivity**
+.. image:: ../images/single_cohort_somatic_coocurrance_brca.PNG
+
+In the above gene X gene matrix, a green color indicates that the pair of genes are mutated in a lot of the same samples (
+co-occurrence). Dark brown indicates that the two genes are rarely mutated in the same sample.
+
+The above plot shows that in the TCGA breast invasive carcinoma dataset, mutation of TP53 and PIK3CA tend towards mutual exclusivity
+
+
+**Why might genes show co-occurrence or mutual exclusivity**
 
 Mutual exclusivity
 
 1. Belong to distinct subtypes which have taken entirely different paths to developing a cancerous genome
 2. Genes both belong a pathway that must be dysregulated, but mutation of one is enough to cause this dysregulation (no selective advantage for mutating multiple members of the same pathway)
 
-
-Co-occurance
-
-1. <todo>
+We explore the possibility of genetically distinct breast cancer subtypes further in the section: **Two-Cohort Mode**
 
 
 ----------------------------------------------------
@@ -168,10 +173,6 @@ Two-Cohort Mode
 ----------------------------------------------------
 Two-Cohort comparison
 ----------------------------------------------------
-----------------------------------------------------
-Two-Cohort module
-----------------------------------------------------
-
 
 
 
