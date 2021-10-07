@@ -11,6 +11,8 @@ Choosing your dataset
 At the top of all analysis modules is a drop down menu that can be used to select a dataset of interest.
 By default, datasets available are from **TCGA**, **PCAWG**, or **ZERO** initiatives.
 
+.. image:: ../images/single_cohort_dataset_selection.PNG
+
 Custom datasets become available immediately after being imported using the **import data** module.
 
 ====================================================
@@ -74,10 +76,6 @@ The number of genes shown can be adjusted using the **Genes to plot** option loc
 
 .. image:: ../images/single_cohort_oncoplot_genestoplot_option.png
 
-You can also choose to look at only a subset of genes you're interested
-
-.. image:: ../images/single_cohort_oncoplot_custom_genes_option.png
-
 **What can we learn from Oncoplots?**
 
 The idea is that the genes most frequently mutated in a cohort have increased likelihood of being important to the disease state studied.
@@ -89,22 +87,34 @@ If we look at the oncoplot, we see known drivers of GBM disease appear near the 
 - PTEN
 - TP53
 - EGFR
-- PIK3CA
-- IDH1
 
-We also see a lot of genes that are more likely to be artefacts than true disease drivers.
+.. image:: ../images/single_cohort_oncoplot_gbm_top5.png
+
+We also see some genes that are more likely to be artefacts than true disease drivers.
 For example, since we sort variants by recurrence in our cohort, very long genes, such as **TTN** can wind up sneaking their way into the oncoplot without having been specifically selected for in the tumor sample.
 Additionally, some genes tend to have high rates of somatic mutation completely independent of whether their in a tumor or healthy cells.
 These 'Dubious' hits can be filtered out using the option shown below. More info about what constitutes a 'Dubious hit' is described in the `FAQ / What are 'dubious genes'?` section
+
+.. image:: ../images/option_dubious_genes.PNG
+
+**New Oncoplot:**
+
+.. image:: ../images/single_cohort_oncoplot_gbm_top5_dubious_genes_removed.PNG
+
+
 
 To further distinguish frequently mutated non-driver genes from genes driving disease, see `Using External Analysis Platforms`
 
 **Adding sample-level metadata annotations**
 
-In the **options** panel below the oncoplot, there is a <optionname> drop-down which can be used to select sample-level metadata you want to annotate samples with.
-The results are shown below.
+In the **options** panel below the oncoplot, there is a Clinical Feature drop-down which can be used to select sample-level metadata you want to annotate samples with.
 
-The order of samples in the oncoplot can be sorted by the sample metadata.
+.. image:: ../images/single_cohort_oncoplot_clinical_annotation_options.PNG
+
+The results are shown below:
+
+.. image:: ../images/single_cohort_oncoplot_clinical_annotations.PNG
+
 This may help you identify patterns in how sample-level metadata associates with the mutational status of commonly mutated genes
 
 
@@ -112,7 +122,9 @@ This may help you identify patterns in how sample-level metadata associates with
 
 Depending on the goals of your research, you may not be exclusively interested in genes with highly recurrent mutations.
 For example, perhaps you want to screen a cohort for samples that have mutations in a set of genes associated with drug resistance.
-We can select a custom list of genes to visualise using the <optionname> drop-down menu.
+We can select a custom list of genes to visualise using the **custom genes** drop-down menu.
+
+.. image:: ../images/single_cohort_oncoplot_custom_genes_option.png
 
 
 ----------------------------------------------------
