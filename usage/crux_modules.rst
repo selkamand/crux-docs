@@ -32,8 +32,9 @@ If you want to learn about:
 - How many mutations are present in each sample (e.g. to identify whether hyper-mutators are present)
 - The top N mutated genes
 
-Simply scroll down to the <panelname> and select the <tabname>.
+Simply scroll down to the **Visualisations** panel and select the **Summary** tab.
 
+.. image:: ../images/single_cohort_summary.png
 
 ----------------------------------------------------
 Creating Oncoplots
@@ -50,25 +51,32 @@ If you want to learn about:
 - How mutations found in particular samples of interest differ from others
 - How samples vary in the mutational status of a custom geneset
 
-Simply scroll down to <panelname> and select the <tabname> tab.
+Simply scroll down to the **Visualisations** panel and select the **Oncoplot** tab.
+
+.. image:: ../images/single_cohort_oncoplot.png
 
 I would strongly recommend taking the time to learn how to read this plot.
-It is a simple yet reasonably effective method of interesting genes and samples.
-
+It is a simple yet effective method of identifying interesting genes and samples.
 
 **Interpretation**
 
 Each column is represents a sample. Each row a gene. The color of each square indicates whether if a gene is mutated in a particular sample, and if so, what type of mutation was observed.
 
-In the example below, we see that <genename> is mutated in samples <sample1,sample2 & sample3>, while the other samples do not have a mutant <genename>.
-Further, <sample1> has a missense mutation in <genename>, while <sample2> has a frameshift mutation.
+In the example below, we see that ZFPM1 is mutated in samples 1-15 (39% of the cohort), while the other samples do not have a mutant ZFPM1.
+Further, sample1 has a in frame deletion mutation in ZFPM1, while sample two has a multi-hit in the same gene (multiple mutations of different types).
 
+.. image:: ../images/single_cohort_oncoplot_zoomed.png
 
 **What genes are shown**
 
 Oncoplots show only the genes mutated in the greatest number of samples.
-The number of genes shown can be adjusted using the <optionname>
+The number of genes shown can be adjusted using the **Genes to plot** option located in the options panel
 
+.. image:: ../images/single_cohort_oncoplot_genestoplot_option.png
+
+You can also choose to look at only a subset of genes you're interested
+
+.. image:: ../images/single_cohort_oncoplot_custom_genes_option.png
 
 **What can we learn from Oncoplots?**
 
