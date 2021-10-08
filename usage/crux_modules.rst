@@ -271,4 +271,7 @@ The resulting dataset can be analysed like any other, and will appear in all **'
 ----------------------------------------------------
 Merging
 ----------------------------------------------------
-<documentation coming soon>
+
+Cohorts can be merged together as follows:
+
+ .. image:: ../images/utilities_merge.PNG
