@@ -231,9 +231,43 @@ We might interpret a two cohort lollipop as follows:
 ====================================================
 Creating Custom Cohorts
 ====================================================
+
 ----------------------------------------------------
 Subsetting
 ----------------------------------------------------
+
+CRUX allows users to subset datasets by:
+
+#. Sample Id
+#. Clinical Metadata
+#. Mutational Status of a Gene
+
+
+.. image:: ../images/utilities_subset_overview.PNG
+
+
+Lets run through an example. We'll create a cohort of breast cancer samples that are progesterone positive.
+
+First, select the TCGA breast carcinoma dataset. Then We choose variables to subset by
+
+.. image:: ../images/utilities_subset_clinical_subset1.PNG
+
+Then we specify if we want to pull out positive or negative progesterone samples
+
+.. image:: ../images/utilities_subset_clinical_subset2.PNG
+
+Review your new dataset using tabular summaries
+
+.. image:: ../images/utilities_subset_clinical_subset3.PNG
+
+Choose a Display Name and Shorter Abbreviation for your dataset, then add it to the data pool.
+
+.. image:: ../images/utilities_subset_clinical_subset4.PNG
+
+The resulting dataset can be analysed like any other, and will appear in all **'Dataset Selection'** dropdown lists
+
+ .. image:: ../images/utilities_subset_clinical_subset5.PNG
+
 ----------------------------------------------------
 Merging
 ----------------------------------------------------

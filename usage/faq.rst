@@ -13,10 +13,10 @@ Data Import
 How do I import data in VCF format?
 ------------------------------------------------
 VCFs must first be converted to MAF format.
-If you're comfortable programming, use vcf2maf_.
+If you're comfortable running commandline tools, use vcf2maf_.
 If you are not, please `contact us`_.
 
-We are currently working on building better workflows for importing VCFs to CRUX for non-programmers.
+We are currently working on building better workflows for importing VCFs to CRUX.
 
 ====================================================
 Analysis
