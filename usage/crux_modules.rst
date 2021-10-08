@@ -155,26 +155,78 @@ Mutual exclusivity
 
 We explore the possibility of genetically distinct breast cancer subtypes further in the section: **Two-Cohort Mode**
 
+----------------------------------------------------
+Lollipop Plots
+----------------------------------------------------
 
 ----------------------------------------------------
 Copy-Number Analysis
 ----------------------------------------------------
 
+<documentation coming soon>
+
+
 ----------------------------------------------------
 Using External Analysis Platforms
 ----------------------------------------------------
 
-
+<documentation coming soon>
 
 
 ====================================================
 Two-Cohort Mode
 ====================================================
+
 ----------------------------------------------------
 Two-Cohort comparison
 ----------------------------------------------------
 
+Often, we want to identify any genomic differences between two cohorts.
+This can be acheived using the **Compare Cohorts** module
 
+
+For example, maybe we might want to ask the question of what genomic differences, if any, exist between breast cancer samples that are progesterone positive and negative.
+
+To do this in CRUX, we first use our sample level metadata to create relevant subsets of the TCGA breast cancer dataset.
+Check out **Creating Custom Cohorts > Subsetting** to see how this was done.
+
+Once we have decided what cohorts we want to compare, we run the analysis from the **Compare Cohorts** module:
+
+.. image:: ../images/two_cohort_comparison.PNG
+
+Then we just select the cohorts of interest, and scroll down to the **Tabular Summary** to see the results.
+
+.. image:: ../images/two_cohort_comparison_tabular.PNG
+
+We can see that TP53 and PIK3CA are enriched for mutations in Progesterone Negative and Progesterone Positive breast cancers respectively.
+Looking at **adjPval** tells us these finding are significant at typical thresholds ( < 0.05 or < 0.01 )
+
+We can visualise differences between cohorts using the following plots:
+
+1. Rainforest plot
+
+.. image:: ../images/two_cohort_comparison_tabular.PNG
+
+2. Co-oncoplot
+
+.. image:: ../images/two_cohort_comparison_cooncoplot.PNG
+
+3. Co-barplot
+
+.. image:: ../images/two_cohort_comparison_coobarplot.PNG
+
+
+**What about examining variant level differences between two cohorts for specific genes?**
+
+We can use the **two-cohort** lollipop to check for cohort-specific patterns of mutation at the gene level.
+
+.. image:: ../images/two_cohort_comparison_lollipop_interpretation.PNG
+
+If you haven't come across lollipop visualisations before, please read **Single Cohort Mode > Lollipop Plots**
+
+We might interpret a two cohort lollipop as follows:
+
+.. image:: ../images/two_cohort_comparison_lollipop.PNG
 
 ====================================================
 Creating Custom Cohorts
@@ -185,3 +237,4 @@ Subsetting
 ----------------------------------------------------
 Merging
 ----------------------------------------------------
+<documentation coming soon>
