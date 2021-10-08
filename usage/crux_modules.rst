@@ -14,6 +14,7 @@ By default, datasets available are from **TCGA**, **PCAWG**, or **ZERO** initiat
 .. image:: ../images/single_cohort_dataset_selection.PNG
 
 Custom datasets become available immediately after being imported using the **import data** module.
+See **Importing custom dataset** section for details.
 
 ====================================================
 Single Cohort Mode
@@ -170,8 +171,70 @@ Copy-Number Analysis
 Using External Analysis Platforms
 ----------------------------------------------------
 
-<documentation coming soon>
+CRUX allows you to export data to run in many other simple to use analysis platforms.
+Supported platforms include:
 
+**Mutational Signature Analysis**
+
+- Mutalisk
+- Signal
+
+**Driver Gene Identification**
+
+- OncodriveCLUSTL
+- OncodriveFML
+
+**Cancer Variant Intrepretation**
+
+- Cancer Genome Interpreter
+
+**Variant Annotation**
+
+- OpenCRAVAT
+
+**Interactive Lollipop Visualisation**
+
+- cBioportal Mutation Mapper
+
+- Protein Paint
+
+**Multiomics Visualisation**
+
+- Xena Browser
+
+- UCSC Browser
+
+**Geneset Signature Analysis (e.g. GO analysis)**
+
+- MSIGDB
+
+
+To use these tools:
+
+1. Navigate to External Tools module
+2. Select dataset of interest
+
+.. image:: ../images/export_1.PNG
+
+3. Choose the tool you want to use
+4. Export data in the appropriate format
+5. Save data to your computer
+
+.. image:: ../images/export_2.PNG
+
+6. Navigate to the tools website
+
+.. image:: ../images/export_3.PNG
+
+7. Follow instructions to run the required tool (for some tools, crux export module will include instructions)
+
+.. image:: ../images/export_4.PNG
+
+8. Enjoy the results of leveraging an ecosystem of powerful, independently created and maintained analysis and visualisations platforms.
+
+Below is an example of the results you get running the TCGA Glioblastoma dataset through OncodriveCLUSTL
+
+.. image:: ../images/export_5.PNG
 
 ====================================================
 Two-Cohort Mode
@@ -229,7 +292,7 @@ We might interpret a two cohort lollipop as follows:
 .. image:: ../images/two_cohort_comparison_lollipop.PNG
 
 ====================================================
-Creating Custom Cohorts
+Subsetting and Merging Cohorts
 ====================================================
 
 ----------------------------------------------------
@@ -272,6 +335,44 @@ The resulting dataset can be analysed like any other, and will appear in all **'
 Merging
 ----------------------------------------------------
 
-Cohorts can be merged together as follows:
+Cohorts can be merged together as follows
 
  .. image:: ../images/utilities_merge.PNG
+
+====================================================
+Importing custom dataset
+====================================================
+
+If you want to look at your own data in CRUX, prepare your file in MAF format then import it using the **'Import Data'** module
+
+.. image:: ../images/import_data.PNG
+
+Crux comes pre-packaged with an example MAF in the **example_data** folder (APL_primary_and_relaps.maf)
+
+.. image:: ../images/import_data2.PNG
+
+Selecting a MAF will produce a summary table. Review then click continue:
+
+.. image:: ../images/import_data3.PNG
+
+Choose a name for your dataset (all fields must be filled in to continue)
+
+.. image:: ../images/import_data4.PNG
+
+Optionally import any sample level metadata (an example metadata file template can be downloaded and opened using excel).
+Sample metadata file must be a tsv/csv with a header row. It must contain a **'Tumor_Sample_Barcode'** column containing sample IDs that match the **Tumor_Sample_Barcode** column of your MAF file.
+Please see the **FAQ** if you have any trouble with preparing your custom dataset
+
+.. image:: ../images/import_data5.PNG
+
+We'll import the APL_primary_and_relapse.clinical_features.tsv file that matches our dataset.
+
+.. image:: ../images/import_data6.PNG
+
+Review once more then we'll add it to our data pool
+
+.. image:: ../images/import_data7.PNG
+
+You should now be able to select your dataset for use in any of the analysis/visualisation modules
+
+.. image:: ../images/import_data8.PNG
