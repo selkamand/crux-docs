@@ -65,7 +65,7 @@ It is a simple yet effective method of identifying interesting genes and samples
 Each column is represents a sample. Each row a gene. The color of each square indicates whether if a gene is mutated in a particular sample, and if so, what type of mutation was observed.
 
 In the example below, we see that ZFPM1 is mutated in samples 1-15 (39% of the cohort), while the other samples do not have a mutant ZFPM1.
-Further, sample1 has a in frame deletion mutation in ZFPM1, while sample two has a multi-hit in the same gene (multiple mutations of different types).
+Further, samples 1 and 2 have a in frame deletion mutation in ZFPM1 (yellow), while sample three has a multiple ZFPM1 mutations of different types (black). All ANKRD43
 
 .. image:: ../images/single_cohort_oncoplot_zoomed.PNG
 
