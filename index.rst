@@ -33,7 +33,10 @@ Table Of Contents
 
    usage/installation
    usage/crux_modules
+   usage/importing_data
    usage/faq
+
+   appendices/manuscript_recreation
    usage/acknowledgements
 
 

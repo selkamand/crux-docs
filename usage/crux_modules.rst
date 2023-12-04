@@ -340,7 +340,7 @@ Cohorts can be merged together as follows
  .. image:: ../images/utilities_merge.PNG
 
 ====================================================
-Importing custom dataset
+Importing Custom Datasets
 ====================================================
 
 If you want to look at your own data in CRUX, prepare your file in MAF format then import it using the **'Import Data'** module

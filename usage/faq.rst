@@ -13,10 +13,24 @@ Data Import
 How do I import data in VCF format?
 ------------------------------------------------
 VCFs must first be converted to MAF format.
-If you're comfortable running commandline tools, use vcf2maf_.
+
+See :doc:`usage/importing_data` for detailed instructions.
+
 If you are not, please `contact us`_.
 
 We are currently working on building better workflows for importing VCFs to CRUX.
+
+------------------------------------------------
+Why can I not import GDC MAF / annotation files?
+------------------------------------------------
+
+The import of GDC data into CRUX most commonly fails due to confusion caused by the  'annotations.txt' file 
+that is automatically downloaded alongside MAF files.
+
+`annotations.txt` is NOT a valid clinical annotations file, it only contains file-level metadata. 
+
+If your upload fails, even when you try to upload the GDC MAF files alone, 
+please screenshot the error message and `contact us`_ so we can resolve the issue.
 
 ====================================================
 Analysis

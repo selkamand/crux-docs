@@ -1,3 +1,4 @@
 .DS_Store
 images/source_files
 _build
+.vscode
