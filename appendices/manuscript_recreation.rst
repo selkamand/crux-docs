@@ -39,9 +39,7 @@ mutations in genes of interest. The first step is to access the Survival
 Analysis page, which is available under the Single Cohort Genomics menu
 on the Crux sidebar [screenshot 1].
 
-.. image:: ../images/manuscript_screenshots/media/image1.png
-   :width: 6.22174in
-   :height: 2.7529in
+.. image:: ../images/manuscript_screenshots/study2/media/image1.png
 
 On this page the GBM dataset is selected and loaded. In the Step 1
 panel, ‘glioblastoma’ entered in the selection field brings up the
@@ -74,9 +72,7 @@ Changing these filters can greatly alter the genes included in the table
 in screenshot 3. It is also important to remove genes with many
 passenger mutations using the filter dubious genes button.
 
-.. image:: ../images/manuscript_screenshots/media/image2.png
-   :width: 6.22174in
-   :height: 2.19691in
+.. image:: ../images/manuscript_screenshots/study2/media/image2.png
 
 This populates the Step 4 panel with a list of genes ordered by the
 p-value of the survival hazard ratio, comparing survival of patients
@@ -88,9 +84,7 @@ of these patients than those without *IDH1* mutations. Note that only 14
 patients have *IDH1* mutations. None of the genes beyond TP53 show
 p-value less than 0.05 .
 
-.. image:: ../images/manuscript_screenshots/media/image3.png
-   :width: 6.22174in
-   :height: 2.19691in
+.. image:: ../images/manuscript_screenshots/study2/media/image3.png
 
 Screenshot 4 shows the next 10 genes on this list; the top 20 genes were
 selected. Note that in the CRUX manuscript (Fig. 3). Note that in the
@@ -98,17 +92,13 @@ manuscript gene *STAG2* was included in the table as the top N gene
 filter was set to 40, and *STAG2* is mutated in only 12 samples; this is
 an example of the effects of changing this filter number.
 
-.. image:: ../images/manuscript_screenshots/media/image4.png
-   :width: 6.22174in
-   :height: 2.19691in
+.. image:: ../images/manuscript_screenshots/study2/media/image4.png
 
 Plotting of survival information for a gene is performed on the Step 5
 panel. To examine *IDH1* mutations this gene is selected under the
 Select Genest menu [screenshot 6].
 
-.. image:: ../images/manuscript_screenshots/media/image5.png
-   :width: 6.22174in
-   :height: 2.19691in
+.. image:: ../images/manuscript_screenshots/study2/media/image5.png
 
 This selection produces a Kaplan Meier plot in the Step 6 Visualisation
 panel [screenshot 7]. Note that the gene (or genes) selected are
@@ -116,16 +106,12 @@ labelled as ‘Geneset’ and are compared to ‘WT’, i.e., no mutation. More
 than one gene can be selected so that the effects of gene mutation
 combinations can be explored.
 
-.. image:: ../images/manuscript_screenshots/media/image6.png
-   :width: 6.22174in
-   :height: 4.90734in
+.. image:: ../images/manuscript_screenshots/study2/media/image6.png
 
 This plot can be downloaded for use using the Download button as seen in
 screenshot 8.
 
-.. image:: ../images/manuscript_screenshots/media/image7.png
-   :width: 6.22174in
-   :height: 2.19691in
+.. image:: ../images/manuscript_screenshots/study2/media/image7.png
 
 Next to identify the mutations of interest we move to the Lollipop and
 select the GBM dataset, as shown in screenshot 9.\ |image1|
@@ -137,17 +123,11 @@ part of the panel under the Gene menu [screenshot 11]. For this gene it
 is notable that mutations are only seen at one site corresponding to
 amino acid 132.
 
-.. image:: ../images/manuscript_screenshots/media/image9.png
-   :width: 6.22174in
-   :height: 3.83012in
+.. image:: ../images/manuscript_screenshots/study2/media/image9.png
 
-.. image:: ../images/manuscript_screenshots/media/image10.png
-   :width: 6.22174in
-   :height: 4.02317in
+.. image:: ../images/manuscript_screenshots/study2/media/image10.png
 
-.. |image1| image:: ../images/manuscript_screenshots/media/image8.png
-   :width: 6.22174in
-   :height: 1.58681in
+.. |image1| image:: ../images/manuscript_screenshots/study2/media/image8.png
 
 ----------------------------------------------------------------
 Short study 3
@@ -166,17 +146,13 @@ Datasets button in the ‘Getting Started’ homepage panel. The thyroid
 carcinoma dataset (THCA) dataset is brought up by typing ‘thyroid’ in
 the name field [screenshot 1] or THCA into the abbreviation field.
 
-.. image:: ../images/manuscript_screenshots/media/image1.png
-   :width: 6.22174in
-   :height: 2.66957in
+.. image:: ../images/manuscript_screenshots/study3/media/image1.png
 
 Clicking on the dataset 28 ‘Thyroid_carcinoma’ button opens the next
 page; the Filter Dubious Genes button on Step 1 panel [screenshot 2] is
 selected.
 
-.. image:: ../images/manuscript_screenshots/media/image2.png
-   :width: 6.22174in
-   :height: 2.21739in
+.. image:: ../images/manuscript_screenshots/study3/media/image2.png
 
 Below this in the Step 2 panel there are the Explore Visualisation tabs
 [screenshot 3]. Here we use the Oncoplot tab to examine the genes with
@@ -187,9 +163,7 @@ understood but widely expressed gene, while *TG* is a significant THCA
 marker (encoding the thyroglobulin protein produced by thyroid tissue)
 which may not be oncogenic.
 
-.. image:: ../images/manuscript_screenshots/media/image3.png
-   :width: 6.23044in
-   :height: 4.89565in
+.. image:: ../images/manuscript_screenshots/study3/media/image3.png
 
 **Use of OncoDriveCLUSTL tool**.
 
@@ -198,15 +172,11 @@ is accessed using the External Tools button on the CRUX sidebar. On the
 page that opens, the first step is to select the THCA dataset for
 download at the Step 1 panel, as shown in screenshot 4.
 
-.. image:: ../images/manuscript_screenshots/media/image4.png
-   :width: 6.22174in
-   :height: 2.42857in
+.. image:: ../images/manuscript_screenshot/study3/media/image4.png
 
 Then Filter Dubious Genes is selected [screenshot 5].
 
-.. image:: ../images/manuscript_screenshots/media/image5.png
-   :width: 6.22174in
-   :height: 2.13043in
+.. image:: ../images/manuscript_screenshots/study3/media/image5.png
 
 Below this is the Step 1.5 panel, where CRUX should indicate the THCA
 dataset is ready for export. In the step 2 panel there is the Select
@@ -214,9 +184,7 @@ Tool tab. Usually it has the first tool (OncodriveFML) highlighted but
 when clicked on the menu drops down and OncoDriveCLUSTL can be selected
 [screenshot 6]
 
-.. image:: ../images/manuscript_screenshots/media/image6.png
-   :width: 6.22174in
-   :height: 2.7in
+.. image:: ../images/manuscript_screenshots/study3/media/image6.png
 
 Moving to the Step 3 panel [screenshot 7], clicking on the Export Data
 tab and will download the formatted THCA dataset to the user computer,
@@ -225,9 +193,7 @@ clicking on the blue button opens a new browser window for
 OncoDrivCLUSTL, at
 http://bbglab.irbbarcelona.org/oncodriveclustl/analysis :
 
-.. image:: ../images/manuscript_screenshots/media/image7.png
-   :width: 6.22174in
-   :height: 1.96139in
+.. image:: ../images/manuscript_screenshots/study3/media/image7.png
 
 On the Step 5 panel (not shown) there are instructions and information
 on the tool. To use OncoDriveCLUSTL a BBGlab account needed (this is
@@ -235,26 +201,20 @@ rapidly done and is free) to log in to use the tool. As seen in
 screenshot 8]. Give the analysis run a name then upload the THCA file
 prepared by CRUX.
 
-.. image:: ../images/manuscript_screenshots/media/image8.png
-   :width: 6.22174in
-   :height: 3.28958in
+.. image:: ../images/manuscript_screenshots/study3/media/image8.png
 
 After checking the terms of use button and press submit a process
 progress window opens; screenshot 9 was taken shortly after starting a
 data processing run.
 
-.. image:: ../images/manuscript_screenshots/media/image9.png
-   :width: 6.20435in
-   :height: 3.18919in
+.. image:: ../images/manuscript_screenshots/study3/media/image9.png
 
 The data processing may take some time, over 15 minutes for this
 dataset. The window will show the status indicator as ‘Finished’, and a
 plot appears [screenshot 10] showing putative drivers with observed
 versus expected p-values.
 
-.. image:: ../images/manuscript_screenshots/media/image10.png
-   :width: 4.22008in
-   :height: 3.75676in
+.. image:: ../images/manuscript_screenshots/study3/media/image10.png
 
 This indicates that *BRAF*, *NRAS*, *HRAS* and *FAM47C* mutations (seen
 in Oncoplot) are highly selected for standout candidates to be examined.
@@ -268,77 +228,57 @@ As above the External tools tab is selected from the CRUX home page, the
 THCA data is selected, Filter Dubious Genes selected and cBioPortal
 mutation mapper selected in the Step2 panel, as in screenshot 11.
 
-.. image:: ../images/manuscript_screenshots/media/image11.png
-   :width: 6.20435in
-   :height: 3.13044in
+.. image:: ../images/manuscript_screenshots/study3/media/image11.png
 
 We then need to select the gene, *BRAF*, in the Step 3 panel [screenshot
 12].
 
-.. image:: ../images/manuscript_screenshots/media/image12.png
-   :width: 6.20435in
-   :height: 1.98696in
+.. image:: ../images/manuscript_screenshots/study3/media/image12.png
 
 Data is then ready for download (indicated in step 1.5) using the
 ‘Export Data’ button on the Step 3 panel [screenshot 13]. Using the
 button on the Step 4 panel will open a window for the cBioportal
 Mutation Mapper at https://www.cbioportal.org/mutation_mapper .
 
-.. image:: ../images/manuscript_screenshots/media/image13.png
-   :width: 6.20435in
-   :height: 2.53031in
+.. image:: ../images/manuscript_screenshots/study3/media/image13.png
 
 Signup for a BBGLab account may be required. The cBioportal Mutation
 Mapper window is shown in screenshot 14. After login, the downloaded
 file can be chosen, genome standard (GRCH37) selected, and visualisation
 selected at the bottom, as on screenshot 15.
 
-.. image:: ../images/manuscript_screenshots/media/image14.png
-   :width: 6.20435in
-   :height: 3.18261in
+.. image:: ../images/manuscript_screenshots/study3/media/image14.png
 
-.. image:: ../images/manuscript_screenshots/media/image15.png
-   :width: 6.13913in
-   :height: 1.38261in
+.. image:: ../images/manuscript_screenshots/study3/media/image15.png
 
 A plot is returned, shown in screenshot 16.
 
-.. image:: ../images/manuscript_screenshots/media/image16.png
-   :width: 6.20435in
-   :height: 3.18261in
+.. image:: ../images/manuscript_screenshots/study3/media/image16.png
 
 This indicates the gene domains and the presence of mutations, as well
 as the mutation types and their annotations from OncoKB and others. A
 plot with the mutation detail shown in screenshot 17.
 
-.. image:: ../images/manuscript_screenshots/media/image17.png
-   :width: 6.20435in
-   :height: 3.18261in
+.. image:: ../images/manuscript_screenshots/study3/media/image17.png
 
 Further details of cohort mutations can be added, screenshot 18, using
 the ‘Add annotation tracks’ button, seen in screenshot 18. A 3D protein
 structure graphic showing the affected domain can also be obtained (not
 shown).
 
-.. image:: ../images/manuscript_screenshots/media/image18.png
-   :width: 6.20435in
-   :height: 2.7in
+.. image:: ../images/manuscript_screenshots/study3/media/image18.png
 
 **Use of Cancer Genome Interpreter (CGI) tool**
 
 After navigating to the External tools on the home page, the CGI tool Is
 selected, screenshot 19.
 
-.. image:: ../images/manuscript_screenshots/media/image19.png
-   :width: 6.20435in
-   :height: 2.7in
+.. image:: ../images/manuscript_screenshots/study3/media/image19.png
 
 Dataset is selected and downloaded [screenshot 20] as described
 previously.
 
-.. image:: ../images/manuscript_screenshots/media/image20.png
-   :width: 6.04247in
-   :height: 2.74903in
+.. image:: ../images/manuscript_screenshots/study3/media/image20.png
 
 Clicking on the navigation button in the Step 4 panel opens a new
 browser window for the CGI portal [screenshot 21] at
@@ -351,33 +291,25 @@ available.
 
 The ANALYSIS tab should be open for the next step.
 
-.. image:: ../images/manuscript_screenshots/media/image21.png
-   :width: 6.20435in
-   :height: 1.76956in
+.. image:: ../images/manuscript_screenshots/study3/media/image21.png
 
 Clicking on the Add File button will allow upload of the CRUX-formatted
 dataset. For this THCA dataset note the reference genome is hg19; this
 is selected and Run button pressed [screenshot 22].
 
-.. image:: ../images/manuscript_screenshots/media/image22.png
-   :width: 4.62609in
-   :height: 3.69565in
+.. image:: ../images/manuscript_screenshots/study3/media/image22.png
 
 The job will start running (this will take some minutes) and the
 progress bar will resemble screenshot 23.
 
-.. image:: ../images/manuscript_screenshots/media/image23.png
-   :width: 6.20435in
-   :height: 1.74903in
+.. image:: ../images/manuscript_screenshots/study3/media/image23.png
 
 Processed data can be downloaded from the site. There will be a
 configurable table of patient samples, as seen in screenshot 24 for the
 initial view of the ALTERATIONS tab. Note the ‘drivers’ indicated under
 Oncogenicity.
 
-.. image:: ../images/manuscript_screenshots/media/image24.png
-   :width: 6.20435in
-   :height: 3.3087in
+.. image:: ../images/manuscript_screenshots/study3/media/image24.png
 
 This table can be explored in various ways: gene of interest or sample
 of interest can be selected, driver information obtained (clicking on
@@ -387,25 +319,18 @@ symbols in the Oncogenic annotation column. One example for BRAF is
 shown in screenshot 25, which indicates the mutation is gain of
 function.
 
-.. image:: ../images/manuscript_screenshots/media/image25.png
-   :width: 6.20435in
-   :height: 2.57529in
+.. image:: ../images/manuscript_screenshots/study3/media/image25.png
 
 Examining TG gene mutations on the ALTERATIONS table, these are
 confirmed as passenger mutations [screenshot 26]:
 
-.. image:: ../images/manuscript_screenshots/media/image26.png
-   :width: 6.20435in
-   :height: 1.95367in
+.. image:: ../images/manuscript_screenshots/study3/media/image26.png
 
 The PRESCRIPTIONS tab results are shown in screenshot 27, giving
 information on the drugs used in patient care and whether the mutations
 make the cancer resistant or still responsive.
 
-.. image:: ../images/manuscript_screenshots/media/image27.png
-   :width: 6.20435in
-   :height: 2.91892in
-
+.. image:: ../images/manuscript_screenshots/study3/media/image27.png
 
 ------------------------------------------------
 Short study 4
@@ -440,39 +365,29 @@ sidebar), a panel opens as seen is screenshot 1. After selecting MAF
 filetyping in Step 1 panel, the relevant MAF file was chosen was located
 using the Browse button in Step 2 panel then uploaded.
 
-.. image:: ../images/manuscript_screenshots/media/image1.png
-   :width: 6.22174in
-   :height: 3.20408in
+.. image:: ../images/manuscript_screenshots/study4/media/image1.png
 
 The additional clinical annotations file was similarly located, selected
 and uploaded from the STEP 2 panel [screenshot 2].
 
-.. image:: ../images/manuscript_screenshots/media/image2.png
-   :width: 6.22174in
-   :height: 1.50612in
+.. image:: ../images/manuscript_screenshots/study4/media/image2.png
 
 In the Step 4 panel the files were then given the name (‘Lung Cancer’)
 that they will carry when loaded in CRUX. The Import button (blue) was
 then pressed [screenshot 3
 
-.. image:: ../images/manuscript_screenshots/media/image3.png
-   :width: 6.02041in
-   :height: 2.38367in
+.. image:: ../images/manuscript_screenshots/study4/media/image3.png
 
 Import to CRUX was confirmed after 20 second delay [screenshot 4].
 
-.. image:: ../images/manuscript_screenshots/media/image4.png
-   :width: 2.98367in
-   :height: 2.31837in
+.. image:: ../images/manuscript_screenshots/study4/media/image4.png
 
 Selecting the External Tools (CRUX sidebar) opens a page where the
 dataset is chosen [screenshot 5]. Note that the Dubious Genes filter is
 not selected as the passenger mutations in these genes are required for
 the signature analyses.
 
-.. image:: ../images/manuscript_screenshots/media/image5.png
-   :width: 6.22174in
-   :height: 2.54694in
+.. image:: ../images/manuscript_screenshots/study4/media/image5.png
 
 In the External Tools Step 2 panel ‘Mutalisk’ is selected, and the data
 exported at Step 3; this arrives in the computer download folder as a
@@ -503,24 +418,18 @@ Instructions
 
 Next press the Go to Mutalisk button selected in Step 4 panel.
 
-.. image:: ../images/manuscript_screenshots/media/image6.png
-   :width: 6.22174in
-   :height: 3.56327in
+.. image:: ../images/manuscript_screenshots/study4/media/image6.png
 
 CRUX then opens a browser window running Mutalisk [screenshot 7].
 
-.. image:: ../images/manuscript_screenshots/media/image7.png
-   :width: 5.66279in
-   :height: 4.3526in
+.. image:: ../images/manuscript_screenshots/study4/media/image7.png
 
 However, the ‘COSMIC’ signatures are not the most up to date. To select
 the correct type of COSMIC V3 signatures it is necessary to select the
 PCAWG – Sig profiler option below it. Then the signature types to be
 examined are designated using the Select all button [screenshot 8].
 
-.. image:: ../images/manuscript_screenshots/media/image8.png
-   :width: 5.66279in
-   :height: 4.22543in
+.. image:: ../images/manuscript_screenshots/study4/media/image8.png
 
 Then the +Add Files option is pressed, the files exported from CRUX are
 chosen (unzipped) and the files are processed [screenshot 9]. The RUN
@@ -529,9 +438,7 @@ this processing is slow and can take several hours for 30 samples. The
 initial stage of processing is shown in screenshot 9. Mutalisk gives a
 process number so the user can exit and return to see progress later.
 
-.. image:: ../images/manuscript_screenshots/media/image9.png
-   :width: 4.96512in
-   :height: 2.34884in
+.. image:: ../images/manuscript_screenshots/study4/media/image9.png
 
 Mutalisk then outputs a number of analyses for each dataset input. Some
 of these are in downloaded PDF files; examples for LUAD1 are shown in
@@ -539,13 +446,9 @@ screenshots 10 to 13. For example, screenshots 10 and 11 show kataegis
 analysis output for LUAD1 and LUAD7, respectively, showing a
 predominance of C>A mutations in the latter but not the former.
 
-.. image:: ../images/manuscript_screenshots/media/image10.png
-   :width: 6.07514in
-   :height: 3.15607in
+.. image:: ../images/manuscript_screenshots/study4/media/image10.png
 
-.. image:: ../images/manuscript_screenshots/media/image11.png
-   :width: 6.075in
-   :height: 3.13295in
+.. image:: ../images/manuscript_screenshots/study4/media/image11.png
 
 Screenshot 12 shows the Mutalisk signature output from sample
 LUAD7_primary1, a primary lung tumour showing a typical smokers profile
@@ -554,27 +457,21 @@ in El-Kamand et al Figure 5C (recoloured for clarity). The signature
 proportion varies slightly over time as the signature data is updated in
 the Mutalisk portal.
 
-.. image:: ../images/manuscript_screenshots/media/image12.png
-   :width: 6.26806in
-   :height: 3.64082in
+.. image:: ../images/manuscript_screenshots/study4/media/image12.png
 
 Screenshot 13 shows the Mutalisk signature output from sample
 LUAD1_metA, a lung tumour metastasis showing a non-typical smokers
 profile no detectable SBS4. Signature plot is highlighted (blue line) in
 El-Kamand et al Figure 5C (recoloured for clarity).
 
-.. image:: ../images/manuscript_screenshots/media/image13.png
-   :width: 6.26806in
-   :height: 3.69388in
+.. image:: ../images/manuscript_screenshots/study4/media/image13.png
 
 However, for cohort wide analysis we need to load the Mutalisk data into
 CRUX. At the top of the Mutalisk page the ‘Get the selected result for
 all samples a once’ button is pressed [screenshot 14, red line
 highlight].
 
-.. image:: ../images/manuscript_screenshots/media/image14.png
-   :width: 6.26806in
-   :height: 1.67755in
+.. image:: ../images/manuscript_screenshots/study4/media/image14.png
 
 This downloads a zip file with a filename ending in ‘.all.samples.zip’.
 The next step uses these files downloaded from Mutalisk, which are first
@@ -582,9 +479,7 @@ unzipped files and placed in an accessible folder for CRUX to navidgate
 to; example files from a containing folder shown in screenshot 15. CRUX
 will ignore the PDF files.
 
-.. image:: ../images/manuscript_screenshots/media/image15.png
-   :width: 6.26806in
-   :height: 1.3681in
+.. image:: ../images/manuscript_screenshots/study4/media/image15.png
 
 When the Mutalisk files are ready, the Mutational Signatures tab (under
 the Single Cohort Genomics menu located on the CRUX sidebar) is then
@@ -597,17 +492,13 @@ Mutalisk files are located. Those files are selected and opened by CRUX,
 which may take a minute. When finished the blue ‘Upload Complete’ bar
 should appear below.
 
-.. image:: ../images/manuscript_screenshots/media/image16.png
-   :width: 6.26806in
-   :height: 3.73469in
+.. image:: ../images/manuscript_screenshots/study4/media/image16.png
 
 The next panels should then be visible. Step 3 panel shows a Venn
 diagram indicating that the MAF and Mutalisk data match up [screenshot
 17]. Note that the Filter Dubious Genes option is off.
 
-.. image:: ../images/manuscript_screenshots/media/image17.png
-   :width: 5.27755in
-   :height: 1.96327in
+.. image:: ../images/manuscript_screenshots/study4/media/image17.png
 
 The Step 4 panel (Review Tabular Data) contains the data table,
 including the signature variants and their contributions for each
@@ -615,9 +506,7 @@ sample; part of the table is shown on screenshot 18 with some details
 blanked. This data can be subsetted and searched but is more easily
 comprehended in the next Step.
 
-.. image:: ../images/manuscript_screenshots/media/image18.png
-   :width: 4.84082in
-   :height: 2.1227in
+.. image:: ../images/manuscript_screenshots/study4/media/image18.png
 
 The Step 5 panel [screenshot 19] shows the visualisation of the
 signature contributions (X-axis) for each tissue sample. There are
@@ -626,16 +515,12 @@ for comparison. Note that colours are set by Mutalisk, so in the
 El-Kamand et al manuscript the chart colours have been adjusted for
 clarity.
 
-.. image:: ../images/manuscript_screenshots/media/image19.png
-   :width: 6.26806in
-   :height: 4.42331in
+.. image:: ../images/manuscript_screenshots/study4/media/image19.png
 
 Pressing the Download button at the bottom brings up the download
 options shown in screenshot 20.
 
-.. image:: ../images/manuscript_screenshots/media/image20.png
-   :width: 2.64082in
-   :height: 2.59184in
+.. image:: ../images/manuscript_screenshots/study4/media/image20.png
 
 Next further signature analysis can be performed using the external
 Signal tool with the Lung cancer data loaded into CRUX as above.
@@ -644,9 +529,7 @@ As for Mutalisk above, we first navigate to the External tool tab on the
 sidebar and open that page. In the Step 1 panel the Lung Cancer dataset
 is selected [screenshot 21]
 
-.. image:: ../images/manuscript_screenshots/media/image22.png
-   :width: 6.26806in
-   :height: 2.59592in
+.. image:: ../images/manuscript_screenshots/study4/media/image22.png
 
 On the Step 2 panel the Signal tool is selected [screenshot 22] and the
 data for export is downloaded using the Export Data button. Note again
@@ -654,9 +537,7 @@ that the Filter Dubious genes is off, since for signature analysis we
 are not concerned with gene drivers but the general pattern of mutations
 present compared to those seen in other cancers.
 
-.. image:: ../images/manuscript_screenshots/media/image23.png
-   :width: 6.26806in
-   :height: 3.8in
+.. image:: ../images/manuscript_screenshots/study4/media/image23.png
 
 The filename zipped file provided is ‘Lung cancer_Signal.zip’. As
 described in the Step 5 panel, unzip the file (‘signal_input1.txt’) and
@@ -666,33 +547,25 @@ navigate to the Signals portal
 The blue Go to Signal button is press and Signal website opens in a new
 browser screen, as shown in screenshot 23.
 
-.. image:: ../images/manuscript_screenshots/media/image24.png
-   :width: 6.26806in
-   :height: 2.73469in
+.. image:: ../images/manuscript_screenshots/study4/media/image24.png
 
 The upload data button is then pressed, which opens the upload file page
 [screenshot 24]. Here, the signal_input1.txt file from CRUX is uploaded
 according to instructions.
 
-.. image:: ../images/manuscript_screenshots/media/image25.png
-   :width: 6.26806in
-   :height: 4.22857in
+.. image:: ../images/manuscript_screenshots/study4/media/image25.png
 
 When the file finishes upload the file format must be selected as
 ‘[Variants]/TSV/TXT’ as seen in the screenshot 25. The reference genome
 build selected (here GRCh37) and the organ chosen, here LUNG.
 
-.. image:: ../images/manuscript_screenshots/media/image26.png
-   :width: 6.26806in
-   :height: 3.53878in
+.. image:: ../images/manuscript_screenshots/study4/media/image26.png
 
 When the analysis is done there are a number of panels that are used to
 access the analysis of individual lung cancer datasets; the first six
 shown in screenshot 26.
 
 .. image:: ../images/manuscript_screenshots/media/image27.png
-   :width: 6.26806in
-   :height: 4.74528in
 
 Here we are interested in tumours LUAD1_metA and LUAD7 primary1 used in
 the El-Kamand et al manuscript. Clicking on the LUAD1_metA panel brings
@@ -702,9 +575,7 @@ complement of this tumour. The first data shown is the Substitution
 catalogue, the pattern of nucleotide substitutions in this tumour; this
 is shown in screenshot 27.
 
-.. image:: ../images/manuscript_screenshots/media/image28.png
-   :width: 6.26806in
-   :height: 4.08491in
+.. image:: ../images/manuscript_screenshots/study4/media/image28.png
 
 There are a number of analyses we can perform from this page, listed at
 the bottom, including strand bias, mutation density, replication timing
@@ -716,26 +587,20 @@ COSMIC V3 signatures detected in the sample mutations [screenshot 28];
 note that there are a range of other related visualisation provided on
 this page.
 
-.. image:: ../images/manuscript_screenshots/media/image29.png
-   :width: 4.92453in
-   :height: 3.64151in
+.. image:: ../images/manuscript_screenshots/study4/media/image29.png
 
 The Similar Samples analysis is of particular interest as it can
 indicate which type of tumours (available to this database) most
 resemble the mutation patterns seen in this LUAD1 tumour. Screenshot 29
 shows the Similar Samples data page.
 
-.. image:: ../images/manuscript_screenshots/media/image30.png
-   :width: 6.26806in
-   :height: 2.99057in
+.. image:: ../images/manuscript_screenshots/study4/media/image30.png
 
 Screenshot 30 shows the output when the analysis is run. The analysis is
 run with a cosine threshold of 0.96 – the pie chart is similar to that
 used in the El-Kamand manuscript figure 5D
 
-.. image:: ../images/manuscript_screenshots/media/image31.png
-   :width: 6.26806in
-   :height: 4.14653in
+.. image:: ../images/manuscript_screenshots/study4/media/image31.png
 
 This signature data suggests that the cancer LUAD1 has a pattern of
 variant that most closely resembles that of Breast Cancer, and only
@@ -745,26 +610,20 @@ Next is the analysis of the LUAD7_primary1 tumour, first showing the
 substitution catalogue which can be seen to be very different to the
 LUAD7 tumour [screenshot 31].
 
-.. image:: ../images/manuscript_screenshots/media/image32.png
-   :width: 6.26806in
-   :height: 4.14694in
+.. image:: ../images/manuscript_screenshots/study4/media/image32.png
 
 LUAD7 sample Signatures analysis (COSMIC V3 signatures) in this sample
 is shown in screenshot 32. Note the prominent SBS4 smoking associated
 signature, absent in LUAD1.
 
-.. image:: ../images/manuscript_screenshots/media/image33.png
-   :width: 6.26806in
-   :height: 3.83019in
+.. image:: ../images/manuscript_screenshots/study4/media/image33.png
 
 The Similar Sample analysis of LUAD7 sample greatly resembles Lung
 cancers, unlike (again) LUAD1 [screenshot 33]. This may reflect a
 preponderance of lung cancers in the Signal database that are caused by
 smoking.
 
-.. image:: ../images/manuscript_screenshots/media/image34.png
-   :width: 6.26806in
-   :height: 4.03774in
+.. image:: ../images/manuscript_screenshots/study4/media/image34.png
 
 
 
@@ -796,60 +655,44 @@ Step 1 panel, clicking on the field will cause the available datasets
 menu to drop down; the Breast Invasive Carcinoma dataset is then
 selected.
 
-.. image:: ../images/manuscript_screenshots/media/image1.png
-   :width: 6.22174in
-   :height: 2.66957in
+.. image:: ../images/manuscript_screenshots/study5/media/image1.png
 
 We then filter out ‘dubious genes’ (which commonly carry passenger
 mutations) on the lower panel section [screenshot 2].
 
-.. image:: ../images/manuscript_screenshots/media/image2.png
-   :width: 6.22174in
-   :height: 1.80189in
+.. image:: ../images/manuscript_screenshots/study5/media/image2.png
 
 Then in Step 2 panel for our purposes we need to subset the data using a
 clinical feature [screenshot 3].
 
-.. image:: ../images/manuscript_screenshots/media/image3.png
-   :width: 6.22174in
-   :height: 1.80189in
+.. image:: ../images/manuscript_screenshots/study5/media/image3.png
 
 When clinical feature is checked, Field and Value menus become available
 [screenshot 4]. These are drop down menus containing features available
 to the user.
 
-.. image:: ../images/manuscript_screenshots/media/image4.png
-   :width: 6.22174in
-   :height: 2.26415in
+.. image:: ../images/manuscript_screenshots/study5/media/image4.png
 
 Male breast cancer cases will be excluded here, so Field = ‘gender’ and
 Value = ‘FEMALE’ are selected. These immediately give plots showing the
 size of the subtypes [screenshot 5]; 966 famales and 9 males are shown.
 
-.. image:: ../images/manuscript_screenshots/media/image5.png
-   :width: 6.22174in
-   :height: 3.28736in
+.. image:: ../images/manuscript_screenshots/study5/media/image5.png
 
 These female-only category needs to be named and entered as a CRUX
 dataset for further use. This is shown in the Step 6 panel [screenshots
 6 and 7].
 
-.. image:: ../images/manuscript_screenshots/media/image6.png
-   :width: 6.22174in
-   :height: 1.54167in
+.. image:: ../images/manuscript_screenshots/study5/media/image6.png
 
 We simply name these ‘BRCAf’ [screenshot 7].
 
-.. image:: ../images/manuscript_screenshots/media/image7.png
-   :width: 6.22174in
-   :height: 1.54167in
+.. image:: ../images/manuscript_screenshots/study5/media/image7.png
 
 Pressing the Add to Data Pool button beneath the fields brings pop-up
 confirmation that the dataset has been imported [screenshot 8].
 
-.. image:: ../images/manuscript_screenshots/media/image8.png
-   :width: 3.56944in
-   :height: 2.47917in
+.. image:: ../images/manuscript_screenshots/study5/media/image8.png
 
 Returning to the top of the page to perform the second subsetting,
 typing ‘brca’ in the selection field [screenshot 9] brings up the
@@ -857,16 +700,12 @@ original dataset (highlighted) but also the BRCAf dataset below it. Note
 that the dataset is available but not saved for future use, so that if
 CRUX is exited, it will need to be recreated to use.
 
-.. image:: ../images/manuscript_screenshots/media/image9.png
-   :width: 6.22174in
-   :height: 1.58333in
+.. image:: ../images/manuscript_screenshots/study5/media/image9.png
 
 BRCAf is then selected, and Filter Dubious Genes turned on [screenshot
 10].
 
-.. image:: ../images/manuscript_screenshots/media/image10.png
-   :width: 6.22174in
-   :height: 1.58333in
+.. image:: ../images/manuscript_screenshots/study5/media/image10.png
 
 Next the subsetting of BRCAf is configured using Field=
 ‘triple_negative_ER-PR_HER2_subtype’ and Value = ‘Not Triple Negative’
@@ -885,9 +724,7 @@ Positive’.
 These subsets were merged using the CRUX ‘merge’ Utility, equivalent to
 OR function.
 
-.. image:: ../images/manuscript_screenshots/media/image11.png
-   :width: 6.22174in
-   :height: 4.30556in
+.. image:: ../images/manuscript_screenshots/study5/media/image11.png
 
 Note that only one subset at a time is created using this subset
 utility. This is because there are often cancer samples with
@@ -902,17 +739,13 @@ This subset needs to be given a name (we ues ‘not_TNBC’ here) in the
 Step 4 panel [screenshot 12] and the Add to Dataset button pressed. The
 pop up alert (not shown) confirms the sub-cohort is available.
 
-.. image:: ../images/manuscript_screenshots/media/image12.png
-   :width: 6.22174in
-   :height: 1.5in
+.. image:: ../images/manuscript_screenshots/study5/media/image12.png
 
 Then, the process is repeated to create the triple negative dataset
 (TNBC) from the samples in the BRCAf set, starting at the first panel
 [screenshot 13].
 
-.. image:: ../images/manuscript_screenshots/media/image13.png
-   :width: 6.27778in
-   :height: 1.67569in
+.. image:: ../images/manuscript_screenshots/study5/media/image13.png
 
 The subsetting is repeated as before, using using Field=
 ‘triple_negative_ER-PR_HER2_subtype’ and Value = ‘Triple Negative’
@@ -929,29 +762,21 @@ Positive’.
 These subsets were sequentially subsetted using the CRUX ‘subset’
 Utility, which gives the same result as an AND function.
 
-.. image:: ../images/manuscript_screenshots/media/image14.png
-   :width: 6.26806in
-   :height: 3.81944in
+.. image:: ../images/manuscript_screenshots/study5/media/image14.png
 
 Then giving the subset a name [screenshot 15] and add to the Data pool.
 
-.. image:: ../images/manuscript_screenshots/media/image15.png
-   :width: 6.26806in
-   :height: 1.5in
+.. image:: ../images/manuscript_screenshots/study5/media/image15.png
 
 Subsets not_TBBC and TNBC can then be compared with the Compare Cohorts
 function in the sidebar [screenshot 16].
 
-.. image:: ../images/manuscript_screenshots/media/image16.png
-   :width: 6.26806in
-   :height: 2.72917in
+.. image:: ../images/manuscript_screenshots/study5/media/image16.png
 
 Comparison data is obtained using the Step 3 panel, first a tabular
 summary [screenshot 16]; top of table only is shown.
 
-.. image:: ../images/manuscript_screenshots/media/image17.png
-   :width: 6.26806in
-   :height: 2.36806in
+.. image:: ../images/manuscript_screenshots/study5/media/image17.png
 
 The next data to view is on the Rainforest Plot Summary tab [screenshot
 17]. Note that the data is provided as an odds ratio; until recently
@@ -959,30 +784,22 @@ these tools returned log odds ratio. This screenshot is shown with the
 FDR< 0.05 selection of the genes of interest. Note P-value column ‘***’
 indicates a p-value <0.001.
 
-.. image:: ../images/manuscript_screenshots/media/image18.png
-   :width: 6.20139in
-   :height: 3.90278in
+.. image:: ../images/manuscript_screenshots/study5/media/image18.png
 
 Selection of significant threshold is shown in screenshot 18.
 
-.. image:: ../images/manuscript_screenshots/media/image19.png
-   :width: 6.26806in
-   :height: 1.71528in
+.. image:: ../images/manuscript_screenshots/study5/media/image19.png
 
 If we select threshold of p-value of 0.001 (not FDR), the results are
 shown in screenshot 19.
 
-.. image:: ../images/manuscript_screenshots/media/image20.png
-   :width: 6.26806in
-   :height: 4.61111in
+.. image:: ../images/manuscript_screenshots/study5/media/image20.png
 
 The mutations of a specific gene can be compared between TNBC and
 not_TNBC sub-cohorts [screenshot 20] in the Lollipop tab; gene *PIK3CA*
 is selected from the drop down menu below.
 
-.. image:: ../images/manuscript_screenshots/media/image22.png
-   :width: 6.26806in
-   :height: 4.32639in
+.. image:: ../images/manuscript_screenshots/study5/media/image22.png
 
 The coBarplot tab gives a comparison of gene mutation frequencies
 [screenshot 21]. Here, the TNBC frequencies go to the left and not_TNBC
@@ -991,15 +808,11 @@ the baseline. The types of mutations are indicated by colour bands, with
 the key below the plot. This plot can be downloaded using the button
 below.
 
-.. image:: ../images/manuscript_screenshots/media/image23.png
-   :width: 6.26806in
-   :height: 3.69444in
+.. image:: ../images/manuscript_screenshots/study5/media/image23.png
 
 Lastly, side by side oncoplots are shown on the coOncoplot tab
 [screenshot 21]. The samples are on the X-axis but ordered according
 mutation occurrence and co-occurrence frequencies. Note that the
 not_TNBC plot is wider as it contains far more samples.
 
-.. image:: ../images/manuscript_screenshots/media/image24.png
-   :width: 6.26806in
-   :height: 2.60417in
+.. image:: ../images/manuscript_screenshots/study5/media/image24.png
