@@ -172,7 +172,7 @@ is accessed using the External Tools button on the CRUX sidebar. On the
 page that opens, the first step is to select the THCA dataset for
 download at the Step 1 panel, as shown in screenshot 4.
 
-.. image:: ../images/manuscript_screenshot/study3/media/image4.png
+.. image:: ../images/manuscript_screenshots/study3/media/image4.png
 
 Then Filter Dubious Genes is selected [screenshot 5].
 
@@ -565,7 +565,7 @@ When the analysis is done there are a number of panels that are used to
 access the analysis of individual lung cancer datasets; the first six
 shown in screenshot 26.
 
-.. image:: ../images/manuscript_screenshots/media/image27.png
+.. image:: ../images/manuscript_screenshots/study4/media/image27.png
 
 Here we are interested in tumours LUAD1_metA and LUAD7 primary1 used in
 the El-Kamand et al manuscript. Clicking on the LUAD1_metA panel brings
@@ -776,12 +776,13 @@ function in the sidebar [screenshot 16].
 Comparison data is obtained using the Step 3 panel, first a tabular
 summary [screenshot 16]; top of table only is shown.
 
+
 .. image:: ../images/manuscript_screenshots/study5/media/image17.png
 
-The next data to view is on the Rainforest Plot Summary tab [screenshot
-17]. Note that the data is provided as an odds ratio; until recently
+The next data to view is on the Rainforest Plot Summary tab [screenshot 17]
+Note that the data is provided as an odds ratio; until recently
 these tools returned log odds ratio. This screenshot is shown with the
-FDR< 0.05 selection of the genes of interest. Note P-value column ‘***’
+FDR < 0.05 selection of the genes of interest. Note P-value column ‘\*\*\*’
 indicates a p-value <0.001.
 
 .. image:: ../images/manuscript_screenshots/study5/media/image18.png
