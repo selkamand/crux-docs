@@ -2,8 +2,6 @@
 Using CRUX
 ##############################
 
-This section is under construction
-
 ====================================================
 Choosing your dataset
 ====================================================
@@ -14,7 +12,7 @@ By default, datasets available are from **TCGA**, **PCAWG**, or **ZERO** initiat
 .. image:: ../images/single_cohort_dataset_selection.PNG
 
 Custom datasets become available immediately after being imported using the **import data** module.
-See **Importing custom dataset** section for details.
+See :doc:`importing_data`  section for details.
 
 ====================================================
 Single Cohort Mode

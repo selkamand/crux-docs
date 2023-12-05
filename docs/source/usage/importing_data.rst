@@ -4,7 +4,15 @@ Importing Custom Datasets
 
 You can import your own datasets into CRUX using the **'Import Data'** module. 
 
-Here we describe how to prepare the mutation and clinical annotation files you'll need.
+
+Where do I start?
+
+1. If have single sample VCFs which have not been annotated by ANNOVAR / VEP: Start here :ref:`Step 1`.
+2. If you already have MAF files and want to create clinical annotations file to add annotaitons to oncoplots / enable survival analysis: Start here :ref:`Step 2`
+3. If you already have a single MAF / ANNOVAR file describing all mutations in your custom cohort: Start here :ref:`Step 3`
+
+
+.. _`Step 1`:
 
 ===========================================
 Step 1: Preparing your mutation data
@@ -117,8 +125,6 @@ The easiest way is to ask you bioinformatics team to run it for you , but otherw
 +=============================+
 | VCFs (Single Sample)        |
 +-----------------------------+
-| VCFs (Multi Sample)         |
-+-----------------------------+
 | SOLID GFF3                  |
 +-----------------------------+
 | Complete Genomics TSV       |
@@ -129,29 +135,35 @@ The easiest way is to ask you bioinformatics team to run it for you , but otherw
 
 
 1.  Visit `wAnnovar <https://wannovar.wglab.org/>`_ 
-2.  Input your files 
-3.  
-
+2.  Input your files (and select the matched Input Format from the dropdown)
+3.  Choose an appropriate reference genome 
+4.  Select RefSeq Gene as your gene definition
+5.  Select individual analysis if using a single sample tumour VCF (ensure your tumour is the first sample in the VCF). 
+6.  Repeat for each tumour VCF you have
 
 CRUX will attempt to auto-detect as much as possible about the features of your annovar annotation.
-This function converts such annovar output files into MAF.
-This function requires that annovar was run with gene based annotation as a first operation, before including any filter or region based annotations. Please be aware that this function performs no transcript prioritization.
+CRUX import functionality converts annovar output files into MAFs. 
+It requires that annovar was run with gene based annotation as a first operation, before including any filter or region based annotations. 
+Please be aware that the CRUX annovar parser performs no transcript prioritization.
 
 **For Bioinformaticians**
 
-We reccomend using the following settings when doing commandline annotation of annovar
+We reccomend using the following settings when performing commandline annotation of annovar
 
 ``table_annovar.pl example/ex1.avinput humandb/ -buildver hg19 -out myanno -remove -protocol (refGene),cytoBand,dbnsfp30a -operation (g),r,f -nastring NA``
 
 
-**Option 2: VCF2MAF**
+**Option 2: INTERCHANGE (VCF2MAF)**
 
 
 
 
+
+
+.. _`Step 2`:
 
 ===========================================
-Step 2: Import Clinical Annotations
+Step 2: Prepare Clinical Annotation Files
 ===========================================
 
 In addition to loading your mutation data, 
@@ -182,6 +194,47 @@ For example:
 
 The file you'd actually import would be <add link to CSV version of above>
 
+.. _`Step 3`:
+
+====================================================
+Step 3: Importing your dataset into CRUX
+====================================================
+
+If you want to look at your own data in CRUX, prepare your file in MAF format then import it using the **'Import Data'** module
+
+.. image:: ../images/import_data.PNG
+
+Crux comes pre-packaged with an example MAF in the **example_data** folder (APL_primary_and_relaps.maf)
+
+.. image:: ../images/import_data2.PNG
+
+Selecting a MAF will produce a summary table. Review then click continue:
+
+.. image:: ../images/import_data3.PNG
+
+Choose a name for your dataset (all fields must be filled in to continue)
+
+.. image:: ../images/import_data4.PNG
+
+Optionally import any sample level metadata (an example metadata file template can be downloaded and opened using excel).
+Sample metadata file must be a tsv/csv with a header row. It must contain a **'Tumor_Sample_Barcode'** column containing sample IDs that match the **Tumor_Sample_Barcode** column of your MAF file.
+Please see the **FAQ** if you have any trouble with preparing your custom dataset
+
+.. image:: ../images/import_data5.PNG
+
+We'll import the APL_primary_and_relapse.clinical_features.tsv file that matches our dataset.
+
+.. image:: ../images/import_data6.PNG
+
+Review once more then we'll add it to our data pool
+
+.. image:: ../images/import_data7.PNG
+
+You should now be able to select your dataset for use in any of the analysis/visualisation modules
+
+.. image:: ../images/import_data8.PNG
+
+Here we describe how to prepare the mutation and clinical annotation files you'll need.
 
 ====================================================
 Data Dictionaries 
