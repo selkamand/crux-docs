@@ -1,12 +1,13 @@
 ================================================================
-Additional Short Studies
+New and Additional Studies
 ================================================================
 
-This appendix describes short studies that we did not have space to describe
-completely in the original CRUX manuscript:
+This appendix describes further short studies beyond those presented in the
+original CRUX manuscript that highlights other functions of CRUX
 
-CRUX, a platform for visualising, exploring and analysing cancer
-genome cohort data, by El-Kamand *et al*.
+Original CRUX manuscript: 
+   CRUX, a platform for visualising, exploring and analysing cancer
+   genome cohort data, by El-Kamand *et al*.
 
 -----------------------------------------------------------------------------
 Identifying key copy number variants (CNVs) in a tumour cohort dataset
