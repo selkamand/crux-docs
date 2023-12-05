@@ -39,6 +39,7 @@ Analysis page, which is available under the Single Cohort Genomics menu
 on the Crux sidebar [screenshot 1].
 
 .. figure:: ../images/manuscript_screenshots/study2/media/image1.png
+
    :red-title:`Screenshot 1`
 
 On this page the GBM dataset is selected and loaded. In the Step 1
