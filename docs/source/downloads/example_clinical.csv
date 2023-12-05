@@ -1,0 +1,5 @@
+Tumor_Sample_Barcode,Disease_Subtype,Gender
+sample1,Subtype1,Female
+sample2,Subtype1,Male
+sample3,Subtype2,Male
+sample5,Subtype2,Male

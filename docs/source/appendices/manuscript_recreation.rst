@@ -1,15 +1,8 @@
 .. role:: red-title
    :class: red-title
 
-.. raw:: html
-
-   <style>
-   .example-box {
-       border: 2px solid #000;
-       padding: 10px;
-       margin: 10px 0;
-   }
-   </style>
+.. role:: example-box
+   :class: example-box
 
 ================================================================
 Recreating analyses from the CRUX manuscript
