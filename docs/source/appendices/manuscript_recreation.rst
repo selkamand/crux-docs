@@ -3,7 +3,7 @@ Appendix
 ############################################
 
 ================================================================
-Recreating CRUX manuscript analyses
+Recreating analyses from the CRUX manuscript
 ================================================================
 
 This appendix demonstrates how to perform each analysis from the manuscript:
@@ -16,7 +16,7 @@ accessed using CRUX.
 
 
 ----------------------------------------------------------------
-Short study 1
+Short study 1: Driver Identification
 ----------------------------------------------------------------
 **Identify putative driver oncogenes from glioblastoma multiforme (GBM) tumours.**
 
@@ -25,7 +25,7 @@ A video tutorial recreating this study is available `here <https://www.youtube.c
 
 
 ----------------------------------------------------------------
-Short study 2
+Short study 2: Prognostic Biomarkers 
 ----------------------------------------------------------------
 
 **Identify biomarkers associated with patient survival by integrating
@@ -130,7 +130,7 @@ amino acid 132.
 .. |image1| image:: ../images/manuscript_screenshots/study2/media/image8.png
 
 ----------------------------------------------------------------
-Short study 3
+Short study 3: Therapeutic Relevance of Driver Mutations
 ----------------------------------------------------------------
 
 **Identification of candidate driver mutations linked to therapeutic
@@ -333,7 +333,7 @@ make the cancer resistant or still responsive.
 .. image:: ../images/manuscript_screenshots/study3/media/image27.png
 
 ------------------------------------------------
-Short study 4
+Short study 4: Mutational Signatures
 ------------------------------------------------
 
 **Mutation signature analysis of cohort data.**
@@ -628,7 +628,7 @@ smoking.
 
 
 ----------------------------------------------------------------
-Short study 5
+Short study 5: Comparing Virtual Cohorts
 ----------------------------------------------------------------
 
 **Gene mutations associated with triple-negative breast cancer.**
