@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'CRUX'
+copyright = '2023, Childrens Cancer Institute'
+author = 'Sam El-Kamand'
 
 release = '0.1'
 version = '0.1.0'
