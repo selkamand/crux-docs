@@ -17,8 +17,6 @@ Crux can be used to
 
 See **Using CRUX** for how to perform these analyses.
 
-This documentation is a work in progress.
-
 What is CRUX
 ---------------------------------
 
@@ -34,8 +32,7 @@ Table Of Contents
    usage/installation
    usage/crux_modules
    usage/importing_data
-   appendices/manuscript_recreation
-   appendices/copynumber_analyses
+   appendices/appendix_index
    usage/faq
    usage/acknowledgements
 
