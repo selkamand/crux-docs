@@ -31,15 +31,15 @@ Use the table below to identify the most convenient method depending on your sta
 +--------------------------------+----------------------------------------------------------------------+
 | ANNOVAR (TSV)                  | Directly Supported: :ref:`Import Straight to CRUX<Step 3>`           |
 +--------------------------------+----------------------------------------------------------------------+
-| VCFs [2-sample, unannotated]   | :ref:`Convert to ANNOVAR<ANNOVAR>` OR :ref:`Convert to MAF<vcf2maf>` |
+| VCFs [2-sample, unannotated]   | :ref:`Convert to ANNOVAR<ANNOVAR>` or :ref:`Convert to MAF<vcf2maf>` |
 +--------------------------------+----------------------------------------------------------------------+
 | VCFs [2-sample, vep-annotated] | :ref:`Convert to MAF<vcf2maf>`                                       |
 +--------------------------------+----------------------------------------------------------------------+
-| SOLID GFF3                     | Convert to ANNOVAR                                                   |
+| SOLID GFF3                     | :ref:`Convert to ANNOVAR<ANNOVAR>`                                   |
 +--------------------------------+----------------------------------------------------------------------+
-| Complete Genomics (TSV)        | Convert to ANNOVAR                                                   |
+| Complete Genomics (TSV)        | :ref:`Convert to ANNOVAR<ANNOVAR>`                                   |
 +--------------------------------+----------------------------------------------------------------------+
-| Complete Genomics (masterVar)  | Convert to ANNOVAR                                                   |
+| Complete Genomics (masterVar)  | :ref:`Convert to ANNOVAR<ANNOVAR>`                                   |
 +--------------------------------+----------------------------------------------------------------------+
 
 ------------------------------
@@ -77,6 +77,8 @@ MAF files can be quite large, but CRUX requires only a small subset of the possi
 
 If you have a MAF file, you can :ref:`Import it directly into CRUX<Step 3>`
 
+Example MAF file: 
+:download:`APL_primary_and_relapse.maf<../downloads/APL_primary_and_relapse.maf>`
 
 .. _`ANNOVAR`:
 
@@ -104,45 +106,47 @@ Annovar input is tabular, and includes various annotation columns, only a small 
 +------------------------------------------+------------------------------+----------------------+
 | Alt                                      | Alternate allele             | Single base or indel |
 +------------------------------------------+------------------------------+----------------------+
-| Func.refGene OR Func.ensGene             | Functional annotation        | Varies               |
+| Func.refGene OR Func.ensGene             | Functional annotation        | String               |
 +------------------------------------------+------------------------------+----------------------+
-| Gene.refGene OR Gene.ensGene             | Gene symbol                  | Varies               |
+| Gene.refGene OR Gene.ensGene             | Gene symbol                  | String               |
 +------------------------------------------+------------------------------+----------------------+
-| GeneDetail.refGene OR GeneDetail.ensGene | Gene details                 | Varies               |
+| GeneDetail.refGene OR GeneDetail.ensGene | Gene details                 | String               |
 +------------------------------------------+------------------------------+----------------------+
-| ExonicFunc.refGene OR ExonicFunc.ensGene | Exonic function annotation   | Varies               |
+| ExonicFunc.refGene OR ExonicFunc.ensGene | Exonic function annotation   | String               |
 +------------------------------------------+------------------------------+----------------------+
-| AAChange.refGene OR AAChange.ensGene     | Amino acid change annotation | Varies               |
+| AAChange.refGene OR AAChange.ensGene     | Amino acid change annotation | String               |
 +------------------------------------------+------------------------------+----------------------+
 
 If you already have an ANNOVAR annotation file you can :ref:`Import it directly into CRUX<Step 3>`
 
+Example Annovar file: 
+:download:`demo_annovar.txt<../downloads/variants.hg19_multianno.txt>`
+
 Q: Ho do I get an ANNOVAR annotated file?
 
-The easiest way is to ask you bioinformatics team to run it for you, but otherwise there are ways to do it manually without programming. 
-
-Note this will require you to manually repeat the annotation process multiple times for single sample VCFs
-
-**Supported File Formats**
-
-+-----------------------------+
-| Starting Filetypes          |
-+=============================+
-| VCFs (Single Sample)        |
-+-----------------------------+
-| SOLID GFF3                  |
-+-----------------------------+
-| Complete Genomics TSV       |
-+-----------------------------+
-| Complete Genomics masterVar |
-+-----------------------------+
-
-
+To obtain an ANNOVAR annotated file, you can either request your bioinformatics team to run it for you, 
+or manually perform the annotation without programming using the process documented below.  
 
 **Creating ANNOVAR files (Using only Graphical Interfaces)**
 
++------------------------------------+
+|    Supported Starting Filetypes    |
++====================================+
+| VCFs (Single Sample)               |
++------------------------------------+
+| VCFs (2-sample, tumor-normal) [1]_ |
++------------------------------------+
+| SOLID GFF3                         |
++------------------------------------+
+| Complete Genomics TSV              |
++------------------------------------+
+| Complete Genomics masterVar        |
++------------------------------------+
+
+.. [1] Tumour sample must be the first sample in VCF
+
 .. warning::
-    For large cohorts (>10 samples) manually running ANNOVAR on each single sample VCF 
+    For large cohorts (>10 samples) manually running ANNOVAR on each single/two-sample VCF 
     is repetitive and time consuming. 
 
     Modern analysis pipelines typically output either **ANNOVAR files** 
@@ -154,7 +158,7 @@ Note this will require you to manually repeat the annotation process multiple ti
 1. Visit `wAnnovar <https://wannovar.wglab.org/>`__
 
 2. Input your files (and select the matched Input Format from the
-   dropdown) :download:`Example Single Sample VCF<../downloads/test_b38.vcf>`
+   dropdown) :download:`Example VCF<../downloads/test_b38.vcf>`
 
 3. Configure Paramaters
 
@@ -190,7 +194,10 @@ Note this will require you to manually repeat the annotation process multiple ti
 
 We reccomend using the following settings when performing commandline annotation of annovar
 
-``table_annovar.pl example/ex1.avinput humandb/ -buildver hg19 -out myanno -remove -protocol (refGene),cytoBand,dbnsfp30a -operation (g),r,f -nastring NA``
+.. code-block:: bash
+    
+    table_annovar.pl example/ex1.avinput humandb/ -buildver hg19 -out myanno -remove -protocol (refGene),cytoBand,dbnsfp30a -operation (g),r,f -nastring NA
+
 
 .. note::
     CRUX will attempt to auto-detect as much as possible about the features of your annovar annotation.
@@ -212,7 +219,7 @@ Option 3: Convert VCFs To MAF using Interchange
 Interchange is the easiest way to convert vep-annotated VCFs into cohort MAF files 
 compatible with CRUX.
 
-If you have unannotated VCFs, please first annotate as described :ref:`here <vep>`:
+If you have unannotated VCFs, please first annotate with VEP as described :ref:`here <vep>`
 
 Once you have VEP-annotated VCFs head to the `Interchange Web
 App <https://ccicb.shinyapps.io/interchange/>`__ and select VCF to MAF
@@ -330,17 +337,14 @@ Annotating Variants with VEP (Graphical tools only)
    you’ll need to use `the GRCh37
    version <http://grch37.ensembl.org/Homo_sapiens/Tools/VEP>`__
 
-    .. image:: ../images/interchange/media/image1.png
-
 3. Upload your VCF
 
 4. Configure Vep with the following settings
 
-   a. **Transcript Database to Use:** Default Ensembl/GENCODE
-      transcripts are fine. 
+   a. **Transcript Database to Use:** Ensembl/GENCODE transcripts. 
       
       .. note::
-        You can  use other transcript
+        You can use other transcript
         databases so long as you ensure consistency between the VCFs in
         your cohort (and any other cohort you want to compare results to)
 
@@ -376,7 +380,7 @@ Data Dictionaries
 A collection of data dictionaries for various filetypes
 
 ----------------------------------------------------
-(MAF) Variant_Classifications
+(MAF) Valid Variant Classifications
 ----------------------------------------------------
 
 +------------------------+

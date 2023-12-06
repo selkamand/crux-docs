@@ -23,7 +23,7 @@ Short study 1: Driver Identification
 **Identify putative driver oncogenes from glioblastoma multiforme (GBM) tumours.**
 
 
-A video tutorial recreating this study is available `here <https://www.youtube.com/channel/UCz3A5pNZOTjR5vrD-pR26qg>`_
+A video tutorial recreating this study is available `here <https://www.youtube.com/watch?v=0aM_GwKsr0E>`_
 
 
 ----------------------------------------------------------------
