@@ -206,13 +206,16 @@ Short study 3: Therapeutic Relevance of Driver Mutations
 **Identification of candidate driver mutations linked to therapeutic
 responses in thyroid cancer.**
 
-Dataset: The Thyroid Cancer (THCA) dataset, containing data (MAF file)
-generated from whole genome sequencing for 496 patient samples.
+.. note:: 
+   Only a subset of the analyses described below were included Figure 4 of the El-Kamand *et al*.
+
+Dataset: The inbuilt TCGA Thyroid Cancer (THCA) dataset,
+generated from whole exome sequencing of 496 patient samples.
 
 For this study the first step from the CRUX homepage is to select and
 load the thyroid carcinoma dataset. This is available from ‘Available
-Data’ under the Data menu on the homepage sidebar or the Explore Public
-Datasets button in the ‘Getting Started’ homepage panel. The thyroid
+Data’ module, accessible via either the data menu on the sidebar or the 'Explore Public
+Datasets' button in the ‘Getting Started’ homepage panel. The thyroid
 carcinoma dataset (THCA) dataset is brought up by typing ‘thyroid’ in
 the name field [screenshot 1] or THCA into the abbreviation field.
 
@@ -223,9 +226,9 @@ the name field [screenshot 1] or THCA into the abbreviation field.
    .. figure:: ../images/manuscript_screenshots/study3/media/image1.png
 
 
-Clicking on the dataset 28 ‘Thyroid_carcinoma’ button opens the next
-page; the Filter Dubious Genes button on Step 1 panel [screenshot 2] is
-selected.
+Clicking on the dataset ‘Thyroid_carcinoma’ button opens the cohort summary
+page; the Filter Dubious Genes toggle on Step 1 panel [screenshot 2] is
+enabled.
 
 .. container:: example-box
    
@@ -255,7 +258,7 @@ which may not be oncogenic.
 OncoDriveCLUSTL is an external platform for gene driver analysis. This
 is accessed using the External Tools button on the CRUX sidebar. On the
 page that opens, the first step is to select the THCA dataset for
-download at the Step 1 panel, as shown in screenshot 4.
+export at the Step 1 panel, as shown in screenshot 4.
 
 .. container:: example-box
    
@@ -275,9 +278,9 @@ Then Filter Dubious Genes is selected [screenshot 5].
 
 Below this is the Step 1.5 panel, where CRUX should indicate the THCA
 dataset is ready for export. In the step 2 panel there is the Select
-Tool tab. Usually it has the first tool (OncodriveFML) highlighted but
-when clicked on the menu drops down and OncoDriveCLUSTL can be selected
-[screenshot 6]
+Tool tab. By default the first tool (OncodriveFML) is selected, but
+when clicked a drop-down menu appears listing all options, allowing OncoDriveCLUSTL
+to be selected [screenshot 6].
 
 .. container:: example-box
    
@@ -287,7 +290,7 @@ when clicked on the menu drops down and OncoDriveCLUSTL can be selected
    
 
 Moving to the Step 3 panel [screenshot 7], clicking on the Export Data
-tab and will download the formatted THCA dataset to the user computer,
+button will download the formatted THCA dataset to the user computer,
 ready to upload to the OncoDriveCLUSTL platform. On the Step 4 panel,
 clicking on the blue button opens a new browser window for
 OncoDrivCLUSTL, at
@@ -301,10 +304,10 @@ http://bbglab.irbbarcelona.org/oncodriveclustl/analysis :
    
 
 On the Step 5 panel (not shown) there are instructions and information
-on the tool. To use OncoDriveCLUSTL a BBGlab account needed (this is
-rapidly done and is free) to log in to use the tool. As seen in
-screenshot 8]. Give the analysis run a name then upload the THCA file
-prepared by CRUX.
+on the tool. To use OncoDriveCLUSTL a BBGlab account is required (this is
+free and quick to set up). Once you log in, to run OncodriveClustl 
+simply give the analysis run a name then upload the THCA file
+prepared by CRUX [screenshot 8].
 
 .. container:: example-box
    
@@ -313,7 +316,7 @@ prepared by CRUX.
    .. figure:: ../images/manuscript_screenshots/study3/media/image8.png
    
 
-After checking the terms of use button and press submit a process
+After checking the terms of use button and pressing submit a process
 progress window opens; screenshot 9 was taken shortly after starting a
 data processing run.
 
@@ -326,8 +329,8 @@ data processing run.
 
 The data processing may take some time, over 15 minutes for this
 dataset. The window will show the status indicator as ‘Finished’, and a
-plot appears [screenshot 10] showing putative drivers with observed
-versus expected p-values.
+plot appears [screenshot 10] showing genes whose mutation appears to be positively selected 
+(putative drivers) with observed versus expected p-values.
 
 .. container:: example-box
    
@@ -345,8 +348,8 @@ In the next part of the study we examine *BRAF* mutations.
 **Use of cBioPortal mutation mapper tool**
 
 As above the External tools tab is selected from the CRUX home page, the
-THCA data is selected, Filter Dubious Genes selected and cBioPortal
-mutation mapper selected in the Step2 panel, as in screenshot 11.
+THCA data is selected and cBioPortal mutation mapper is chosen in the Step2 panel 
+as the tool we want to export data for [screenshot 11].
 
 .. container:: example-box
    
@@ -355,7 +358,7 @@ mutation mapper selected in the Step2 panel, as in screenshot 11.
    .. figure:: ../images/manuscript_screenshots/study3/media/image11.png
    
 
-We then need to select the gene, *BRAF*, in the Step 3 panel [screenshot
+We then need to select the gene, *BRAF*, in the step 3 panel [screenshot
 12].
 
 .. container:: example-box
@@ -365,10 +368,10 @@ We then need to select the gene, *BRAF*, in the Step 3 panel [screenshot
    .. figure:: ../images/manuscript_screenshots/study3/media/image12.png
 
 
-Data is then ready for download (indicated in step 1.5) using the
-‘Export Data’ button on the Step 3 panel [screenshot 13]. Using the
-button on the Step 4 panel will open a window for the cBioportal
-Mutation Mapper at https://www.cbioportal.org/mutation_mapper .
+We then use the ‘Export Data’ button to download the data as we 
+did for oncodriveClustl, and use the
+'Go to cBioportal Mutation Mapper' button on the Step 4 panel to 
+navigate to the tool at https://www.cbioportal.org/mutation_mapper.
 
 .. container:: example-box
    
@@ -377,10 +380,12 @@ Mutation Mapper at https://www.cbioportal.org/mutation_mapper .
    .. figure:: ../images/manuscript_screenshots/study3/media/image13.png
    
 
-Signup for a BBGLab account may be required. The cBioportal Mutation
-Mapper window is shown in screenshot 14. After login, the downloaded
-file can be chosen, genome standard (GRCH37) selected, and visualisation
-selected at the bottom, as on screenshot 15.
+The cBioportal Mutation Mapper window is shown in screenshot 14. 
+
+Note for this TCGA dataset the reference genome GRCH37 selected.
+
+The mutations file is uploaded using the 'Choose File' button, 
+then we click Visualise [screenshot 15].
 
 .. container:: example-box
    
@@ -407,7 +412,7 @@ A plot is returned, shown in screenshot 16.
 
 This indicates the gene domains and the presence of mutations, as well
 as the mutation types and their annotations from OncoKB and others. A
-plot with the mutation detail shown in screenshot 17.
+plot with the mutation type legend is shown in screenshot 17.
 
 .. container:: example-box
    
@@ -416,7 +421,7 @@ plot with the mutation detail shown in screenshot 17.
    .. figure:: ../images/manuscript_screenshots/study3/media/image17.png
    
 
-Further details of cohort mutations can be added, screenshot 18, using
+Further details of cohort mutations can be added [screenshot 18], using
 the ‘Add annotation tracks’ button, seen in screenshot 18. A 3D protein
 structure graphic showing the affected domain can also be obtained (not
 shown).
@@ -431,7 +436,7 @@ shown).
 **Use of Cancer Genome Interpreter (CGI) tool**
 
 After navigating to the External tools on the home page, the CGI tool Is
-selected, screenshot 19.
+selected [screenshot 19].
 
 .. container:: example-box
    
@@ -440,7 +445,7 @@ selected, screenshot 19.
    .. figure:: ../images/manuscript_screenshots/study3/media/image19.png
    
 
-Dataset is selected and downloaded [screenshot 20] as described
+The THCA dataset is selected and exported [screenshot 20] as described
 previously.
 
 .. container:: example-box
@@ -456,7 +461,7 @@ https://www.cancergenomeinterpreter.org/analysis; an account (easily
 obtained and free) is needed for login. If not logged in the tool can
 work, but it is likely that there will be a pink box at the bottom
 indicating ‘you have exceeded the maximum number of jobs’. Log in will
-make the user’s previous analyses from the previous 6 month the
+make the user’s previous analyses from the previous 6 months
 available.
 
 The ANALYSIS tab should be open for the next step.
@@ -543,32 +548,33 @@ Short study 4: Mutational Signatures
 
 **Mutation signature analysis of cohort data.**
 
-*Dataset*: We created a new dataset in CRUX by importing published
-variant calls from a previous study of 30 lung tumours sequenced with
-deep multi-region whole genome sequencing (WGS), merging this with the
-associated clinical data. These data are from Leong et al 2019,
-manuscript reference 24 (PMID: 30348992) and is available from European
-Nucleotide Archive (https://www.ebi.ac.uk/ena) accession number
-PRJEB28616. The patients included current, former, and non-smokers, and
+*Dataset*: We created a new dataset in CRUX by importing 
+data from a previously published study of 30 lung tumours sequenced with
+deep multi-region whole genome sequencing (WGS). 
+These data are from the Leong et al 2019 (PMID: 30348992). 
+Raw data is available from European Nucleotide Archive (https://www.ebi.ac.uk/ena)
+accession number PRJEB28616. The patients included current, former, and non-smokers, and
 the tumour biopsies were from paired primary and metastatic tumour
-biopsies. The data was in VCF file format, which we annotated using a
+biopsies. The data was originally in VCF file format, which we annotated using a
 command line vcf2maf tool available at https://github.com/mskcc/vcf2maf
 to create the MAF files employed here. Further clinical annotation used
 data (CSV filetype) on patient smoking status.
+
+.. note:: 
+   There are now :doc:`more accessible ways <../usage/importing_data>` to convert VCF files to MAFs if you
+   are not comfortable working on the commandline 
 
 In this study we examine somatic variant signatures in lung cancer data.
 These signatures are patterns of single nucleotide mutations which can
 provide mutagenesis mechanisms and other information regarding tumour
 development; the signatures used are COSMIC V3. Analysis employed two
 external tools, Mutalisk (http://mutalisk.org/analyze.php) and Signal
-(https://www.signaldb.org/). For this work MAF files are first uploaded,
-then the additional clinical data (smoking status of participants);
-these are merged an loaded into CRUX.
+(https://www.signaldb.org/). For this work MAF files must first be imported to CRUX,
+alongside clinical data (smoking status of participants).
 
-From the Import Data selection (under the Data menu on the CRUX
-sidebar), a panel opens as seen is screenshot 1. After selecting MAF
-filetyping in Step 1 panel, the relevant MAF file was chosen was located
-using the Browse button in Step 2 panel then uploaded.
+To get started we navigate to the Import Data module (available under the Data menu on the CRUX
+sidebar) [screenshot 1]. After selecting MAF filetype in the Step 1 panel, 
+the relevant MAF file was chosen was located using the Browse button in the Step 2 panel and imported.
 
 .. container:: example-box
    
