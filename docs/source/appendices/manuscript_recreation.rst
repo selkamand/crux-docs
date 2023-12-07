@@ -595,7 +595,7 @@ and uploaded from the STEP 2 panel [screenshot 2].
 
 In the Step 4 panel the files were then given the name (‘Lung Cancer’)
 that they will carry when loaded in CRUX. The Import button (blue) was
-then pressed [screenshot 3
+then pressed [screenshot 3]
 
 .. container:: example-box
    
@@ -615,8 +615,8 @@ Import to CRUX was confirmed after 20 second delay [screenshot 4].
 
 Selecting the External Tools (CRUX sidebar) opens a page where the
 dataset is chosen [screenshot 5]. Note that the Dubious Genes filter is
-not selected as the passenger mutations in these genes are required for
-the signature analyses.
+not selected as the passenger mutations in these genes may still be useful for
+in the signature analyses.
 
 .. container:: example-box
    
@@ -628,8 +628,8 @@ the signature analyses.
 In the External Tools Step 2 panel ‘Mutalisk’ is selected, and the data
 exported at Step 3; this arrives in the computer download folder as a
 zipped folder called ‘Lung Cancer_Mutalisk’, the dataset name in CRUX.
-This contains VCF data files for all the samples, and it is best to open
-the folder and copy the uncompressed files to a nearby location. These
+This contains VCF data files for all the samples, and it is best to 
+unzip this folder before proceeding further. These
 individual files will be uploaded to Mutalisk as described below.
 
 Note that in the Step 5 panel there is information about using Mutalisk:
@@ -644,15 +644,15 @@ Instructions
 3. Select reference build (Human GRCh37 if using pre-packaged TCGA/PCAWG
    datasets)
 
-4. Select the relevant Disease Type mutalisk will automatically choose
-   relevant signatures to screen in sample. An alternate unbiased
-   approach is to screen against all PCAWG (V3) signatures. To do this
+4. Select the relevant Disease Type (mutalisk will automatically choose
+   relevant signatures to screen in sample). An alternate unbiased
+   approach is to screen against the full set of PCAWG (V3) signatures. To do this
    expand the PCAWG tab and 'select all' signatures. You do not need to
-   specify a disease.
+   specify a disease. 
 
 5. Run analysis
 
-Next press the Go to Mutalisk button selected in Step 4 panel.
+Next press the Go to Mutalisk button selected in Step 4 panel [screenshot 6].
 
 .. container:: example-box
    
@@ -696,11 +696,11 @@ process number so the user can exit and return to see progress later.
    .. figure:: ../images/manuscript_screenshots/study4/media/image9.png
    
 
-Mutalisk then outputs a number of analyses for each dataset input. Some
-of these are in downloaded PDF files; examples for LUAD1 are shown in
-screenshots 10 to 13. For example, screenshots 10 and 11 show kataegis
-analysis output for LUAD1 and LUAD7, respectively, showing a
-predominance of C>A mutations in the latter but not the former.
+Mutalisk then outputs a number of analyses for each dataset input. 
+Examples for LUAD1 are shown in screenshots 10 to 13. For example, 
+screenshots 10 and 11 show kataegis analysis output for LUAD1 and LUAD7,
+respectively, showing a predominance of C>A mutations in the latter but 
+not the former.
 
 .. container:: example-box
    
@@ -719,9 +719,7 @@ predominance of C>A mutations in the latter but not the former.
 Screenshot 12 shows the Mutalisk signature output from sample
 LUAD7_primary1, a primary lung tumour showing a typical smokers profile
 with high SBS4. Highlighted (blue line) is the signature plot presented in 
-El-Kamand et al Figure 5C (recoloured for clarity). The signature
-proportion varies slightly over time as the signature data is updated in
-the Mutalisk portal.
+El-Kamand et al Figure 5C (recoloured for clarity).
 
 .. container:: example-box
    
@@ -741,10 +739,15 @@ profile no detectable SBS4. Signature plot is highlighted (blue line) in El-Kama
    .. figure:: ../images/manuscript_screenshots/study4/media/image13.png
    
 
-However, for cohort wide analysis we need to load the Mutalisk data into
+However, for cohort wide analysis we need to load the Mutalisk data back into
 CRUX. At the top of the Mutalisk page the ‘Get the selected result for
-all samples a once’ button is pressed [screenshot 14, red line
-highlight].
+all samples at once’ button is pressed [screenshot 14, red line
+highlight]. 
+
+Ensure the results mutalisk is set to download only the best model for each sample
+by selecting 'Mutational Sigature (Best Only)' in the dropdown to the right 
+of the 'Get the selected result for all samples at once' button as pictured in 
+[screenshot 14]
 
 .. container:: example-box
    
@@ -755,9 +758,8 @@ highlight].
 
 This downloads a zip file with a filename ending in ‘.all.samples.zip’.
 The next step uses these files downloaded from Mutalisk, which are first
-unzipped files and placed in an accessible folder for CRUX to navidgate
-to; example files from a containing folder shown in screenshot 15. CRUX
-will ignore the PDF files.
+unzipped; example mutalisk files from a containing folder are shown in screenshot 15. 
+
 
 .. container:: example-box
    
@@ -770,10 +772,14 @@ When the Mutalisk files are ready, the Mutational Signatures tab (under
 the Single Cohort Genomics menu located on the CRUX sidebar) is then
 selected to open a new page of panels [screenshot 16]. On the first
 (Step 1) panel the Lung Cancer data is selected using the ‘Please select
-a dataset’ field. Then on the Step 2 panel the instructions given in the
-panel have already been followed by this point, so the the next action
-is to press the Browse button, and navigate to where the unipped
-Mutalisk files are located. Those files are selected and opened by CRUX,
+a dataset’ field. 
+We leave Filter Dubious Genes of since it will have no effect on this module.
+Then we note that the Step 2 panel includes instructions on how to prepare the
+mutalisk files - these have already been followed by this point.
+The next actionis to press the Browse button, and navigate to where the unipped
+Mutalisk files are located and select all your mutalisk reports 
+(navigate to folder and hit [ctrl + A] or [command + A]). 
+Those files are selected and opened by CRUX,
 which may take a minute. When finished the blue ‘Upload Complete’ bar
 should appear below.
 
@@ -786,7 +792,7 @@ should appear below.
 
 The next panels should then be visible. Step 3 panel shows a Venn
 diagram indicating that the MAF and Mutalisk data match up [screenshot
-17]. Note that the Filter Dubious Genes option is off.
+17]. 
 
 .. container:: example-box
    
@@ -797,9 +803,9 @@ diagram indicating that the MAF and Mutalisk data match up [screenshot
 
 The Step 4 panel (Review Tabular Data) contains the data table,
 including the signature variants and their contributions for each
-sample; part of the table is shown on screenshot 18 with some details
-blanked. This data can be subsetted and searched but is more easily
-comprehended in the next Step.
+sample; part of the table is shown on screenshot 18. 
+This data can be subsetted and searched but is more easily comprehended in 
+the next Step.
 
 .. container:: example-box
    
@@ -809,11 +815,8 @@ comprehended in the next Step.
    
 
 The Step 5 panel [screenshot 19] shows the visualisation of the
-signature contributions (X-axis) for each tissue sample. There are
-multiple tissue samples (tumour primary samples and metastasis samples)
-for comparison. Note that colours are set by Mutalisk, so in the
-El-Kamand et al manuscript the chart colours have been adjusted for
-clarity.
+signature contributions (X-axis) for each tissue sample. Note that chart colours 
+in the El-Kamand et al manuscript have been adjusted for clarity.
 
 .. container:: example-box
    
@@ -821,6 +824,11 @@ clarity.
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image19.png
    
+
+.. note:: 
+   The options panel below the plot includes a 'facet by' menu, which lets
+   us group samples by their smoking status, and helps produce the effect observed
+   in the El-Kamand et al manuscript.
 
 Pressing the Download button at the bottom brings up the download
 options shown in screenshot 20.
@@ -841,10 +849,9 @@ is selected [screenshot 21]
 
 .. container:: example-box
    
-   :red-title:`Screenshot 22`
+   :red-title:`Screenshot 21`
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image22.png
-   
 
 On the Step 2 panel the Signal tool is selected [screenshot 22] and the
 data for export is downloaded using the Export Data button. Note again
@@ -852,9 +859,10 @@ that the Filter Dubious genes is off, since for signature analysis we
 are not concerned with gene drivers but the general pattern of mutations
 present compared to those seen in other cancers.
 
+
 .. container:: example-box
    
-   :red-title:`Screenshot 23`
+   :red-title:`Screenshot 22`
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image23.png
 
@@ -868,10 +876,10 @@ browser screen, as shown in screenshot 23.
 
 .. container:: example-box
    
-   :red-title:`Screenshot 24`
+   :red-title:`Screenshot 23`
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image24.png
-   
+
 
 The upload data button is then pressed, which opens the upload file page
 [screenshot 24]. Here, the signal_input1.txt file from CRUX is uploaded
@@ -879,10 +887,10 @@ according to instructions.
 
 .. container:: example-box
    
-   :red-title:`Screenshot 25`
+   :red-title:`Screenshot 24`
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image25.png
-   
+
 
 When the file finishes upload the file format must be selected as
 ‘[Variants]/TSV/TXT’ as seen in the screenshot 25. The reference genome
@@ -890,21 +898,20 @@ build selected (here GRCh37) and the organ chosen, here LUNG.
 
 .. container:: example-box
    
-   :red-title:`Screenshot 26`
+   :red-title:`Screenshot 25`
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image26.png
-   
 
 When the analysis is done there are a number of panels that are used to
 access the analysis of individual lung cancer datasets; the first six
 shown in screenshot 26.
 
+
 .. container:: example-box
    
-   :red-title:`Screenshot 27`
+   :red-title:`Screenshot 26`
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image27.png
-   
 
 Here we are interested in tumours LUAD1_metA and LUAD7 primary1 used in
 the El-Kamand et al manuscript. Clicking on the LUAD1_metA panel brings
@@ -914,12 +921,13 @@ complement of this tumour. The first data shown is the Substitution
 catalogue, the pattern of nucleotide substitutions in this tumour; this
 is shown in screenshot 27.
 
+
 .. container:: example-box
-   
-   :red-title:`Screenshot 28`
+
+   :red-title:`Screenshot 27`
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image28.png
-   
+
 
 There are a number of analyses we can perform from this page, listed at
 the bottom, including strand bias, mutation density, replication timing
@@ -931,9 +939,10 @@ COSMIC V3 signatures detected in the sample mutations [screenshot 28];
 note that there are a range of other related visualisation provided on
 this page.
 
+      
 .. container:: example-box
    
-   :red-title:`Screenshot 29`
+   :red-title:`Screenshot 28`
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image29.png
    
@@ -945,7 +954,7 @@ shows the Similar Samples data page.
 
 .. container:: example-box
    
-   :red-title:`Screenshot 30`
+   :red-title:`Screenshot 29`
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image30.png
    
@@ -958,7 +967,7 @@ run with a cosine threshold of 0.96 – the pie chart is similar to that
 
 ..    container:: example-box
    
-   :red-title:`Screenshot 31`
+   :red-title:`Screenshot 30`
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image31.png
    
@@ -973,7 +982,7 @@ LUAD7 tumour [screenshot 31].
 
 .. container:: example-box
    
-   :red-title:`Screenshot 32`
+   :red-title:`Screenshot 31`
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image32.png
    
@@ -984,7 +993,7 @@ signature, absent in LUAD1.
 
 .. container:: example-box
    
-   :red-title:`Screenshot 33`
+   :red-title:`Screenshot 32`
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image33.png
    
@@ -996,7 +1005,7 @@ smoking.
 
 .. container:: example-box
    
-   :red-title:`Screenshot 34`
+   :red-title:`Screenshot 33`
 
    .. figure:: ../images/manuscript_screenshots/study4/media/image34.png
    
