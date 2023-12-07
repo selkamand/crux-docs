@@ -1011,7 +1011,6 @@ smoking.
    
 
 
-
 ----------------------------------------------------------------
 Short study 5: Comparing Virtual Cohorts
 ----------------------------------------------------------------
@@ -1239,7 +1238,7 @@ function in the sidebar [screenshot 16].
    
 
 Comparison data is obtained using the Step 3 panel, first a tabular
-summary [screenshot 16]; top of table only is shown.
+summary [screenshot 17]; top of table only is shown.
 
 
 .. container:: example-box
@@ -1249,7 +1248,7 @@ summary [screenshot 16]; top of table only is shown.
    .. figure:: ../images/manuscript_screenshots/study5/media/image17.png
    
 
-The next data to view is on the Rainforest Plot Summary tab [screenshot 17]
+The next data to view is on the Rainforest Plot Summary tab [screenshot 18]
 Note that the data is provided as an odds ratio; until recently
 these tools returned log odds ratio. This screenshot is shown with the
 FDR < 0.05 selection of the genes of interest. Note P-value column ‘\*\*\*’
@@ -1262,7 +1261,7 @@ indicates a p-value <0.001.
    .. figure:: ../images/manuscript_screenshots/study5/media/image18.png
    
 
-Selection of significant threshold is shown in screenshot 18.
+Selection of significant threshold is shown in screenshot 19.
 
 .. container:: example-box
    
@@ -1272,7 +1271,7 @@ Selection of significant threshold is shown in screenshot 18.
    
 
 If we select threshold of p-value of 0.001 (not FDR), the results are
-shown in screenshot 19.
+shown in screenshot 20.
 
 .. container:: example-box
    
@@ -1287,7 +1286,7 @@ is selected from the drop down menu below.
 
 .. container:: example-box
    
-   :red-title:`Screenshot 22`
+   :red-title:`Screenshot 20`
 
    .. figure:: ../images/manuscript_screenshots/study5/media/image22.png
    
@@ -1301,19 +1300,19 @@ below.
 
 .. container:: example-box
    
-   :red-title:`Screenshot 23`
+   :red-title:`Screenshot 21`
 
    .. figure:: ../images/manuscript_screenshots/study5/media/image23.png
    
 
 Lastly, side by side oncoplots are shown on the coOncoplot tab
-[screenshot 21]. The samples are on the X-axis but ordered according
+[screenshot 22]. The samples are on the X-axis but ordered according
 mutation occurrence and co-occurrence frequencies. Note that the
 not_TNBC plot is wider as it contains far more samples.
 
 .. container:: example-box
    
-   :red-title:`Screenshot 24`
+   :red-title:`Screenshot 22`
 
    .. figure:: ../images/manuscript_screenshots/study5/media/image24.png
    
