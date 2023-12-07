@@ -50,13 +50,14 @@ on the Crux sidebar [screenshot 1].
 
 
 On this page the GBM dataset is selected and loaded. In the Step 1
-panel, ‘glioblastoma’ entered in the selection field brings up the
-Glioblastoma multiforme dataset, which is then selected. The Filter
-Dubious Genes is also selected on that panel. In the Step 2 panel the
-Time To Event dropdown menu is selected and option
+panel, ‘glioblastoma’ is searched in the selection field and the
+Glioblastoma multiforme dataset is then selected. The Filter
+Dubious Genes option is also selected on that panel. 
+
+In the Step 2 panel the Time To Event dropdown menu is selected and option
 ‘days_to_last_followup’ chosen. From the Event Status dropdown menu
 ‘vital_status’ option is chosen. These two options delineate the time to
-event needed for the patients of this GBM dataset.
+event needed to perform survival analysis on this GBM dataset.
 
 Further filtering of the geneset can be performed on Step 3 panel
 [screenshot 2], changing these filter values can greatly affect the
@@ -64,14 +65,15 @@ output table:
 
 -  ’Only consider the top N genes’ filter - genes are ranked by number
    of samples bearing mutations in them, and removes all genes outside
-   the top N highly ranked genes. These N genes are passed to the table.
-   Note that the table does not use this ranking as it ranks by hazard
+   the top N highly ranked genes. 
+   The effect of mutations in each of the top N genes on patient survival are examined.
+   Note that the table below does not use this ranking as it ranks by hazard
    ratio p-value.
 
 -  ‘Geneset size’ filter – setting this to 1 (default) looks at genes
    individually, while setting to 2 means that pairs of genes are
-   examines, so that samples with mutations in a pair of 2 genes (such
-   as *TP53* and *RB1*) are considered and compared to other gene pairs.
+   examined, so that samples with mutations in a pair of 2 genes (such
+   as *TP53* and *RB1*) for an effect on patient survival.
 
 -  ‘Minimum size’ filter – excluded genes that show mutations in fewer
    than this number of samples.
@@ -96,8 +98,7 @@ Screenshot 3 shows the data for from the top 10 genes in GBM, with
 hazard ratio of 0.202 is well below 1, indicating much better survival
 of these patients than those without *IDH1* mutations. Note that only 14
 patients have *IDH1* mutations. None of the genes beyond TP53 show
-p-value less than 0.05 .
-
+p-value less than 0.05.
 
 
 .. container:: example-box
@@ -106,10 +107,18 @@ p-value less than 0.05 .
 
    .. figure:: ../images/manuscript_screenshots/study2/media/image3.png
 
+   .. warning:: 
+
+      The **P values** displayed above are not adjusted for  
+      multiple testing. Depending on how you present these findings,
+      you may need to correct for the total number of 'tests'
+      (number of different genes/genesets examined. 
+      In this example there are '20' genes in the table, 
+      as indicated by the caption 'Showing 1 to 10 of **[20]** entries'
 
 Screenshot 4 shows the next 10 genes on this list; the top 20 genes were
-selected. Note that in the CRUX manuscript (Fig. 3). Note that in the
-manuscript gene *STAG2* was included in the table as the top N gene
+selected. Note that in the CRUX manuscript (Fig. 3) the 
+gene *STAG2* was included in the table as the top N gene
 filter was set to 40, and *STAG2* is mutated in only 12 samples; this is
 an example of the effects of changing this filter number.
 
@@ -122,7 +131,7 @@ an example of the effects of changing this filter number.
 
 Plotting of survival information for a gene is performed on the Step 5
 panel. To examine *IDH1* mutations this gene is selected under the
-Select Genest menu [screenshot 6].
+Select Genest menu [screenshot 5].
 
 .. container:: example-box
    
@@ -132,7 +141,7 @@ Select Genest menu [screenshot 6].
 
    
 This selection produces a Kaplan Meier plot in the Step 6 Visualisation
-panel [screenshot 7]. Note that the gene (or genes) selected are
+panel [screenshot 6]. Note that the gene (or genes) selected are
 labelled as ‘Geneset’ and are compared to ‘WT’, i.e., no mutation. More
 than one gene can be selected so that the effects of gene mutation
 combinations can be explored.
@@ -145,7 +154,7 @@ combinations can be explored.
 
    
 This plot can be downloaded for use using the Download button as seen in
-screenshot 8.
+[screenshot 7].
 
 
 .. container:: example-box
@@ -155,8 +164,9 @@ screenshot 8.
    .. figure:: ../images/manuscript_screenshots/study2/media/image7.png
    
 
-Next to identify the mutations of interest we move to the Lollipop and
-select the GBM dataset, as shown in screenshot 9.
+Next to identify the mutations of interest we move to the Lollipop tab 
+(Single Cohort Genomics > Cohort Summary) and
+select the GBM dataset, as shown in [screenshot 8].
 
 
 .. container:: example-box
@@ -166,12 +176,12 @@ select the GBM dataset, as shown in screenshot 9.
    .. figure:: ../images/manuscript_screenshots/study2/media/image8.png
    
 
-This gives the Lollipop plot for the selected gene. Screenshot 10 shows
-the consequences of the mutation for the protein (and defined protein
-domains), one the Step 2 panel. Here *IDH1* was selected in the lower
-part of the panel under the Gene menu [screenshot 11]. For this gene it
-is notable that mutations are only seen at one site corresponding to
-amino acid 132.
+This gives the Lollipop plot for the selected gene. Screenshot 9 shows the
+Lollipop tab of the Step 2 panel, which indicates recurrance and position of all 
+mutations GBM mutations in a user-specified protein (and defined protein domains).
+Here *IDH1* was selected in the lower part of the panel under the Gene menu [screenshot 10]. 
+For this gene it is notable that all mutations in the cohort occur at one 
+site corresponding to amino acid 132.
 
 
 .. container:: example-box

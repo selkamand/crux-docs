@@ -24,7 +24,7 @@ interactive explorations. To keep CRUX lightweight and easy to install,
 CRUX does not run GISTIC2 itself, and instead offers pre-compiled
 GISTIC2 data for TCGA cohorts. For researchers wishing to generate
 GISTIC2 results on their cohort, we recommend using GenePattern
-(available online at
+(available online at 
 `www.genepattern.org <http://www.genepattern.org>`__).
 
 *Dataset*: Inbuilt TCGA GISTIC2 results for both GBM (n = 273 with
